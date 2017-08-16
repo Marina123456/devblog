@@ -47,6 +47,11 @@ app.get('/contact', function (req, res) {
         res.render('contact');
     });
 });
+
+app.get('/add-article', function (req, res) {
+    res.send('ArticleBig.html');
+});
+
 app.post('/api/articlesSmall', function(req, res) {
     //console.log(req.body);
     var articleSmall = new ArticleSmallModel({
