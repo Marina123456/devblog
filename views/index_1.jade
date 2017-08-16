@@ -1,0 +1,82 @@
+doctype html
+html
+  head
+    link(rel='stylesheet', href='style.css')
+
+    link(rel='stylesheet', href='css/owl.carousel.css')
+
+    link(rel='stylesheet', href='css/animate.css')
+
+    link(href='https://fonts.googleapis.com/css?family=Roboto', rel='stylesheet')
+
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+
+    meta(charset='utf-8')
+
+    title Dev-blog
+
+    script(src='js/jquery-3.1.1.min.js')
+
+    script(src='js/script.js')
+  body
+    .my-wrapper
+      .my-header
+        h1.my-title.wow.zoomIn
+          a(href='./index.html') DEV-blog
+
+        .my-menu
+          .my-menu-toogle(onclick='toogleMenu();')
+
+          ul
+            li
+              a(href='./project.html') &Pcy;&rcy;&ocy;&iecy;&kcy;&tcy;&ycy;
+
+            hr.vr
+
+            li
+              a(href='./ssilki.html') &Scy;&scy;&ycy;&lcy;&kcy;&icy;
+
+            hr.vr
+
+            li
+              a(href='./contacts.html') &Kcy;&ocy;&ncy;&tcy;&acy;&kcy;&tcy;&ycy;
+
+
+      .footer
+        .my-menu
+          ul
+            li
+              a(href='./project.html') &Pcy;&rcy;&ocy;&iecy;&kcy;&tcy;&ycy;
+
+            hr.vr
+
+            li
+              a(href='./ssilki.html') &Scy;&scy;&ycy;&lcy;&kcy;&icy;
+
+            hr.vr
+
+            li
+              a(href='#') &Ucy;&chcy;&iecy;&bcy;&acy;
+
+            hr.vr
+
+            li
+              a(href='#') &Kcy;&ocy;&ncy;&tcy;&acy;&kcy;&tcy;&ycy;
+    script(src='js/wow.min.js')
+        script.
+          new WOW().init();
+        script(type='text/javascript', src='js/owl.carousel.min.js')
+        script.
+          var owl=$(".my-cartochka-cover-spisok").owlCarousel({
+          autoPlay: 4000, //Set AutoPlay to 3 seconds
+          pagination:	false,
+          paginationNumbers: true,
+          items : 2,
+          itemsDesktop : [1920,2],
+          itemsDesktopSmall : [1059,1],
+          itemsTablet: [600,1], //1 items between 600 and 0
+          navigation : true,
+          navigationText : [" "," "],
+          rewindNav : true,
+          scrollPerPage : false
+          });

@@ -1,0 +1,33 @@
+extends layouts/_default
+block head
+    - var pageTitle = 'Dev-blog';
+block header
+    - currentNav = 1;
+block content
+            .my-slider(style='background: url(img/cluttered-desk.jpg); background-size: cover;')
+            .my-cartochka-wrapper
+                - for (var i=0; i<project.length; i++) {
+                           -if (i==0) {
+                           .wow.slideInLeft.my-cartochka-left
+                                      .my-cartochka-title
+                                        span.my-cartochka-title-text
+                                          !=project[i].title
+                                      .my-cartochka-category
+
+                                      .my-cartochka-description
+                                        span
+                                           !=project[i].description
+
+                           -} else {
+                                .wow.slideInRight.my-cartochka-right
+                                           .my-cartochka-title
+                                              span.my-cartochka-title-text
+                                                !=project[i].title
+                                           .my-cartochka-category
+
+                                           .my-cartochka-description
+                                             span
+                                                !=project[i].description
+
+                                -}
+                           -}

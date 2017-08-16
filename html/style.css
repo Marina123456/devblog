@@ -1,0 +1,405 @@
+
+@font-face {
+    font-family: Broadway; /* Гарнитура шрифта */
+    src: local("Broadway"),
+    url(fonts/Broadway_SU_Regular.eot?#iefix) format('embedded-opentype'),
+    url(fonts/Broadway_SU_Regular.woff) format("woff");
+    font-style: normal;
+    font-weight: normal;
+    font-stretch: normal;
+}
+
+html {
+    font-size: 100%;
+}
+.my-header {
+    height: 75px;
+    max-width: 1130px;
+    margin: auto;
+    margin-top: 0;
+}
+html {
+    font-family: 'Roboto', sans-serif;
+}
+.my-title {
+    font-family: Broadway,'Broadway SU';
+    font-size: 3em;
+    margin-top: 0;
+    line-height: 75px;
+    margin-left: 75px;
+    position: absolute;
+}
+.my-title a {
+    text-decoration: none;
+    color: #4e2c76;
+}
+
+
+.my-menu-toogle {
+    background-repeat: no-repeat;
+    background: url(img/svg/toogleMenu.svg);
+    margin-left: 28px;
+    margin-top: 28px;
+    margin-bottom: 10px;
+    height: 28px;
+    width: 35px;
+    background-size: cover;
+    display: none;
+    cursor: pointer;
+}
+.my-menu {
+    float: right;
+    margin-top: 0;
+    display: inline;
+    line-height: 75px;
+    margin-right: 10px;
+    position: relative;
+    z-index: 5;
+}
+.my-menu ul {
+    margin: 0;
+    padding-left: 0;
+    vertical-align: middle;
+    list-style: none;
+    display: block;
+}
+.my-menu a {
+    font-size: 1.333em;
+    text-decoration: none;
+    color: #4e2c76;
+}
+.my-menu a:hover {
+
+    text-decoration: underline;
+}
+.my-menu .vr{
+    display: inline-block;
+    margin: 0;
+    margin-bottom: -5px;
+    height: 20px;
+    width: 2px;
+    border: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: #4e2c76;
+}
+.my-menu li {
+    display: inline;
+}
+@media (max-width: 800px) {
+    .my-title {
+        margin-left: 100px;
+    }
+    .my-menu-toogle {
+        display: block;
+    }
+    .my-menu ul {
+        display: none;
+    }
+    .my-menu li {
+
+        background-color: rgba(250, 226, 190, 0.7);
+
+    }
+    .my-menu {
+        width: 100%;
+        margin-right: 0;
+    }
+    .my-menu, .my-menu li {
+        display: block;
+    }
+    .my-menu .vr{
+        display: none;
+    }
+    .my-menu li:hover{
+        background-color: rgba(250, 226, 190, 0.6);
+    }
+}
+.my-slider {
+    height: 99.5vh;/*calc(730px - 75px);*/
+    margin-top: -75px;
+    background-image:url(img/webprograming.jpg),
+    linear-gradient(to top, #afa18c 0%, #f9f3eb 50%, #c4bbb1 100%);
+    background-repeat: no-repeat;
+    width: 100%;
+
+}
+.my-contacts {
+    background-color: #fae2be!important;
+    color: #4e2c76;
+    background-image: none;/*linear-gradient(to top, #afa18c 0%, #f9f3eb 50%, #c4bbb1 100%);*/
+
+}
+.my-visit {
+    width: 100%;
+    height: calc(100% - 75px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.my-visit div + div {
+    margin-top: 10px;
+}
+.my-visit-name {
+    font-size: 1.333em;
+}
+.my-visit-contimg{
+    border: 2px dashed;
+    height: 155px;
+    width: 155px;
+    padding: 2px;
+    border-radius: 50%;
+
+}
+.my-visit-img {
+
+    margin-left: 2px;
+    margin-top: 2px;
+    background: url(img/pic2.jpg);
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+
+
+}
+.footer-text{
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 25px;
+}
+.my-visit-links {
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+}
+.vk {
+    background: url(img/svg/vk.svg);
+}
+.skype {
+    background: url(img/svg/skype.svg);
+}
+.gmail {
+    background: url(img/svg/g.svg);
+}
+.my-visit-link {
+    width: 50px;
+    height: 50px;
+    /*background-color: red;*/
+    background-size: cover;
+}
+
+.my-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #d9d9d9;
+    width: 100%;
+    height: auto;
+}
+.my-cartochka-left, .my-cartochka-right{
+    width: 530px;
+    /*height: 330px;*/
+    padding-bottom: 25px;
+    background-color: white;
+    box-shadow: 0 4px 10px 0 grey;
+}
+.clear {
+    clear: both;
+}
+
+.my-cartochka-wrapper {
+    flex-wrap: wrap;
+    max-width: 1130px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media (max-width: 1059px) {
+
+    .my-cartochka-wrapper {
+        justify-content: center;
+    }
+    .my-cartochka-right {
+        margin-top: 50px;
+    }
+}
+.my-cartochka-cover {
+    height: 525px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 10px 0 grey;
+}
+.my-cartochka-cover-big{
+    box-shadow: 0 4px 10px 0 grey;
+    width: 100%;
+    background-color: white;
+    overflow: hidden;
+}
+.my-cartochka-title {
+    width: 100%;
+    height: 80px;
+    background-color: #4e2c76;
+    color: #feeb46;
+    font-size: 1.333em;
+    box-shadow: 0 4px 10px 0 grey;
+}
+.my-cartochka-title-text {
+    margin-left: 31px;
+    line-height: 80px;
+}
+.my-cartochka-cover-spisok {
+    width: 100%;
+    height: calc(100% - 80px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.owl-wrapper {
+    margin-top: 30px;
+    left: 17px!important;
+}
+@media (max-width: 1059px) {
+    /*.my-cartochka-cover {
+        height: 1000px;
+    }*/
+    .my-cartochka-cover-spisok {
+        justify-content: center;
+
+    }
+    .my-cartochka-cover-spisok-item {
+        margin: auto;
+    }
+    .owl-wrapper {
+        left: 0!important;
+    }
+}
+.my-cartochka-cover-spisok-item {
+    width: 530px;
+    height: 380px;
+    box-shadow: 0 4px 10px 0 grey;
+}
+.owl-item:nth-child(2n+1) .my-cartochka-cover-spisok-item {
+      background-color: #8f6a95;
+}
+.owl-item:nth-child(2n) .my-cartochka-cover-spisok-item {
+    background-color: #f1b61a;
+}
+.my-cartochka-cover-spisok-item-img {
+    width: 100%;
+    height: 320px;
+}
+.my-cartochka-cover-spisok-item-text {
+    margin-left: 31px;
+    margin-top: 15px;
+    font-size: 1.333em;
+}
+.owl-item:nth-child(2n+1) .my-cartochka-cover-spisok-item-text{
+    color: #feeb46;
+}
+.owl-item:nth-child(2n) .my-cartochka-cover-spisok-item-text{
+    color: #170243;
+}
+.my-cartochka-category {
+    width: 100%;
+    height: 40px;
+    color: #9e9d95;
+    margin-top: 30px;
+    text-transform: lowercase;
+    font-weight: 700;
+}
+.my-cartochka-category-text {
+    margin-left: 31px;
+
+}
+
+.my-cartochka-description {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.my-cartochka-cover-big-img {
+    background-size: cover;
+    width: 100%;
+    height: 360px;
+}
+.my-cartochka-cover-big-text {
+    padding: 30px;
+    color: #797979;
+}
+.footer{
+    height: 75px;
+    width: 100%;
+    margin: auto;
+    background-color: #8f6a95;
+    margin-top: 18px;
+}
+.my-letter {
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    position: relative;
+}
+#leter{
+    width: calc(100% - 4em);
+    height: calc(100% - 4em);
+    margin: auto;
+    padding: 1em;
+    color: #58a;
+    background-color: white;
+    border: 1em solid transparent;
+    background: linear-gradient(white, white)
+    padding-box,
+    repeating-linear-gradient(-45deg,
+            red 0, red 12.5%,
+            transparent 0, transparent 25%,
+            #58a 0, #58a 37.5%,
+            transparent 0, transparent 50%)
+    0 / 5em 5em;
+    overflow: hidden;
+    position: relative;
+}
+#leter .left, #leter .right {
+    position: relative;
+    float: left;
+    width: 40%;
+    margin-top: 3em;
+}
+#leter .right{ margin-left: 4em;}
+#leter input{
+    border: none;
+    border-bottom: #58a solid 2px;
+
+    margin-left: 20px;
+    height: 20px;
+    width: 90%;
+}
+#leter #textEmLab{
+    height: 100%;
+
+}
+#leter textarea{
+    width: 90%;
+    height: 8em;
+    border: #58a solid 2px;
+}
+#leter input[type="submit"]{
+    margin-left: 0;
+    width: 90%;
+    height:  2em;
+    margin-top: 2em;
+    color: red;
+    border: solid 2px;
+    background-color: white;
+}
+#postmark {
+    width: 6em;
+    height: 6em;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

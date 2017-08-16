@@ -1,0 +1,79 @@
+.my-menu {
+    background-color: #feeb46;
+    height: 75px;
+    max-width: 1130px;
+    margin: auto;
+    top: 0;
+}
+.my-slider {
+    max-width: 1130px;
+    margin: auto;
+    height: calc(760px - 75px);
+    margin-top: 0;
+    background: url(img/first.gif);
+    background-size: 100% 100%;
+}
+.my-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #d9d9d9;
+    width: 100%;
+    height: auto;
+}
+.my-cartochka-left, .my-cartochka-right{
+    width: 530px;
+    height: 330px;
+
+}
+.clear {
+    clear: both;
+}
+.my-cartochka-left {
+
+    background-color: blue;
+}
+.my-cartochka-right {
+
+    background-color: green;
+}
+.my-cartochka-wrapper {
+    flex-wrap: wrap;
+    max-width: 1130px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media (max-width: 1059px) {
+
+    .my-cartochka-wrapper {
+        justify-content: center;
+    }
+    .my-cartochka-right {
+        margin-top: 50px;
+    }
+}
+.my-cartochka-cover {
+    height: 330px;
+    width: 100%;
+    background-color: blueviolet;
+}
+.my-cartochka-cover-big{
+    height: 1500px;
+    width: 100%;
+    background-color: blueviolet;
+}
+.my-letter {
+    width: 100%;
+    height: 300px;
+    background-color: brown;
+}
+.footer{
+    height: 75px;
+    width: 100%;
+    background-color: #feeb46;
+    margin-top: 18px;
+}

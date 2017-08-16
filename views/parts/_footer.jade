@@ -1,0 +1,20 @@
+script(src='js/wow.min.js')
+script.
+  new WOW().init();
+script(type='text/javascript', src='js/owl.carousel.min.js')
+script.
+  var owl=$(".my-cartochka-cover-spisok").owlCarousel({
+  autoPlay: 4000, //Set AutoPlay to 3 seconds
+  pagination:	false,
+  paginationNumbers: true,
+  items : 2,
+  itemsDesktop : [1920,2],
+  itemsDesktopSmall : [1059,1],
+  itemsTablet: [600,1], //1 items between 600 and 0
+  navigation : true,
+  navigationText : [" "," "],
+  rewindNav : true,
+  scrollPerPage : false
+  });
+.footer
+    .footer-text Созданно 30.11.2016г.
