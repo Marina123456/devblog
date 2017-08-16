@@ -48,7 +48,7 @@ app.get('/contact', function (req, res) {
     });
 });
 
-app.get('/add-article', function (req, res) {
+app.get('/add-article/', function (req, res) {
     res.send('ArticleBig.html');
 });
 
