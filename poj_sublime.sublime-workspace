@@ -1,0 +1,766 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"back",
+				"background-size"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"fon",
+				"font-size-adjust"
+			],
+			[
+				"g",
+				"geometria"
+			],
+			[
+				"p",
+				"portfolio-title"
+			],
+			[
+				"geometri",
+				"geometria-medium"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"r",
+				"repeat-x"
+			],
+			[
+				"tet",
+				"text-align"
+			],
+			[
+				"j",
+				"justify-content"
+			],
+			[
+				"ge",
+				"geometria-medium"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"text-",
+				"text-transform"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"b",
+				"background"
+			],
+			[
+				"bor",
+				"border-right-style"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"bo",
+				"border-bottom"
+			],
+			[
+				"img",
+				"img-responsive"
+			],
+			[
+				"re",
+				"required\tAttr"
+			],
+			[
+				"pa",
+				"padding-top"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"co",
+				"cover"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"pro",
+				"product"
+			],
+			[
+				"query",
+				"querySelector"
+			],
+			[
+				"flex-",
+				"flex-wrap"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"for",
+				"foreach\tforeach …"
+			],
+			[
+				"wr",
+				"flex-wrap"
+			],
+			[
+				"sp",
+				"space-between"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"a",
+				"auto"
+			],
+			[
+				"fle",
+				"flex-direction"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"flex",
+				"flex-direction"
+			],
+			[
+				"ali",
+				"align-items"
+			],
+			[
+				"ele",
+				"element"
+			],
+			[
+				"ov",
+				"overflow"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"m",
+				"margin-bottom"
+			],
+			[
+				"align-",
+				"align-items"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"margin-",
+				"margin-top"
+			],
+			[
+				"fo",
+				"foreach\tforeach …"
+			],
+			[
+				"fl",
+				"flex-direction"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"min-",
+				"min-height"
+			],
+			[
+				"i",
+				"inline"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"list",
+				"list-style-type"
+			],
+			[
+				"text-a",
+				"text-align"
+			],
+			[
+				"cl",
+				"click"
+			],
+			[
+				"end",
+				"endforeach"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"che",
+				"checked"
+			],
+			[
+				"ch",
+				"checked"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"footer",
+				"footer__menu__item"
+			],
+			[
+				"im",
+				"important"
+			],
+			[
+				"col",
+				"column"
+			],
+			[
+				"c",
+				"cover"
+			],
+			[
+				"list-",
+				"list-style-image"
+			],
+			[
+				"s",
+				"space-between"
+			],
+			[
+				"border-im",
+				"border-image-slice"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"la",
+				"layer-13"
+			],
+			[
+				"background-c",
+				"background-color"
+			],
+			[
+				"al",
+				"align-items"
+			],
+			[
+				"u",
+				"uppercase"
+			],
+			[
+				"head",
+				"header\tTag"
+			],
+			[
+				"dia",
+				"display"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: I",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: Install Package",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 432.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/my_projects/devblog"
+	],
+	"file_history":
+	[
+		"/C/Users/Марина/AppData/Roaming/Sublime Text 3/Packages/Gist/Default (Windows).sublime-keymap",
+		"/C/Users/Марина/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Марина/Desktop/proj/sftp-config.json",
+		"/C/WebServers/home/localhost/www/olimp/db/connection.php",
+		"/C/WebServers/home/localhost/www/look/db/function.php",
+		"/C/Users/Марина/Desktop/proj/function.php",
+		"/C/Users/Марина/Desktop/proj/index.php",
+		"/C/Users/Марина/Downloads/sitemap.xml",
+		"/C/Users/Марина/Desktop/proj/style.css",
+		"/C/WebServers/home/localhost/www/look/color/index.php",
+		"/C/WebServers/home/localhost/www/olimp/db/function.php",
+		"/C/WebServers/home/localhost/www/olimp/db/mysql_conf.php",
+		"/C/Users/Марина/Desktop/found_prog/css/style.css",
+		"/C/Users/Марина/Desktop/found_prog/index.html",
+		"/C/Users/Марина/Desktop/found_prog/img/cart_3.svg",
+		"/C/Users/Марина/Desktop/found_prog/img/logo.svg",
+		"/C/Users/Марина/Downloads/Oleose/Oleose/Berry/css/berry.css",
+		"/C/Users/Марина/Desktop/магистр/портфолио/index.html",
+		"/C/Users/Марина/Downloads/Oleose/Oleose/Berry/index.html",
+		"/C/WebServers/home/localhost/www/1.php",
+		"/C/Users/Марина/Desktop/работа/delux/index.php",
+		"/C/Users/Марина/Desktop/работа/delux/sections.php",
+		"/C/Users/Марина/Desktop/работа/delux/element.php",
+		"/C/Users/Марина/Desktop/работа/delux/template.php",
+		"/C/Users/Марина/Downloads/12storez/12storez/catalog.html",
+		"/C/Users/Марина/Downloads/Oleose/Oleose/Berry/demo/index.html",
+		"/C/Users/Марина/Downloads/Oleose/Oleose/Berry/web/index.html",
+		"/C/Users/Марина/Desktop/магистр/портфолио/mail.php",
+		"/C/WebServers/home/localhost/www/look/parsing/index.php",
+		"/C/Users/Марина/Desktop/html/mail_send.php",
+		"/C/Users/Марина/Desktop/магистр/портфолио/css/style.css",
+		"/C/Users/Марина/Downloads/nncizy0HKnHUHTep/bitrix/components/yenisite/bbs.full/templates/.default/bitrix/catalog.top/main_slider/lang/ru/template.php",
+		"/C/Users/Марина/Downloads/cqedaYIXNdwQbdrw/bitrix/templates/bbs_copy/components/yenisite/bbs.full/hungary-bbs/bitrix/catalog.top/main_slider/template.php",
+		"/C/Users/Марина/Downloads/V82ZULYCh0davGbW/bitrix/templates/bbs_copy/components/yenisite/bbs.full/hungary-bbs/bitrix/catalog.top/main_slider/lang/ru/template.php",
+		"/C/Users/Марина/Downloads/index(3).php",
+		"/C/Users/Марина/Downloads/M1qocTfBwNZihrEm/bitrix/templates/bbs_copy/components/yenisite/bbs.full/hungary-bbs/bitrix/catalog.element/.default/lang/ru/template.php",
+		"/C/Users/Марина/Downloads/G3rEQJsiagsH4sAX/bitrix/templates/bbs_copy/components/yenisite/bbs.full/hungary-bbs/bitrix/catalog.section.list/main/lang/ru/template.php",
+		"/C/Users/Марина/Downloads/B2psKOXyrxX70UEo/bitrix/templates/bbs_copy/components/yenisite/bbs.full/hungary-bbs/bitrix/catalog.section/block/lang/ru/template.php",
+		"/C/Users/Марина/Downloads/WY6jeiogILNYsfis/bitrix/templates/bbs_copy/components/yenisite/bbs.full/hungary-bbs/bitrix/catalog.section.list/main/lang/ru/template.php",
+		"/C/Users/Марина/Downloads/RBEkWl5mmBTl1ypM/bitrix/templates/bbs_copy/components/yenisite/bbs.full/hungary-bbs/bitrix/catalog.section.list/section/lang/ru/template.php",
+		"/C/Users/Марина/Downloads/JSPld0dWYErLXzfe/bitrix/templates/bbs_copy/components/yenisite/bbs.full/hungary-bbs/bitrix/catalog.section/detail_list/lang/ru/template.php",
+		"/C/Users/Марина/Downloads/f1EICyodb9B8uGR2/bitrix/templates/bbs_copy/components/yenisite/bbs.full/hungary-bbs/bitrix/catalog.section/block/lang/ru/template.php",
+		"/C/Users/Марина/Downloads/Cr4Mj8CwGUyEB45I/bitrix/templates/bbs_copy/components/yenisite/bbs.full/hungary-bbs/bitrix/catalog.section/list/lang/ru/template.php",
+		"/C/Users/Марина/Downloads/6adTNyV4NRF8xZ2N/bitrix/templates/bbs_copy/components/yenisite/bbs.full/hungary-bbs/bitrix/catalog.smart.filter/bbs-horizontal/lang/ru/template.php",
+		"/F/дз_жирнова/сайт/index.html",
+		"/F/сайт/index.html",
+		"/C/Users/Марина/Downloads/index(2).php",
+		"/C/Users/Марина/Downloads/index(1).php",
+		"/C/Users/Марина/Downloads/15FjLd5WceBwQ6Iy/bitrix/templates/bbs/components/yenisite/bbs.full/hungary-bbs/bitrix/catalog.top/main_slider/lang/ru/template.php",
+		"/C/xampp/htdocs/look/pallet/index.php",
+		"/C/xampp/htdocs/look/db/function.php",
+		"/C/xampp/htdocs/look/visual_pallet_place_proc/index.php",
+		"/C/Users/Марина/Desktop/Marina_course/imsmanifest.xml",
+		"/C/Users/Марина/Desktop/m_course/First_course2/1/module.js",
+		"/C/Users/Марина/Desktop/m_course/First_course2/1/start.html",
+		"/C/Users/Марина/Desktop/m_course/First_course2/courseimages/courselab.js",
+		"/C/Users/Марина/Desktop/m_course/First_course2/courseimages/lms.js",
+		"/C/xampp/htdocs/look/age/index.php",
+		"/C/xampp/htdocs/look/visual_pallet_year/index.php",
+		"/C/xampp/htdocs/look/visual_pallet/index.php",
+		"/C/xampp/htdocs/look/to_hsl/index.php",
+		"/C/xampp/htdocs/look/visual_pallet_year_proc/index.php",
+		"/C/Users/Марина/Desktop/html/mailing_list.php",
+		"/C/Users/Марина/Desktop/basket/index1.html",
+		"/C/xampp/htdocs/look/pallet/write_db.php",
+		"/C/WebServers/usr/local/php5/lib/ColorThief/ColorThief.php",
+		"/C/WebServers/home/localhost/www/look/visual/index.php",
+		"/C/xampp/htdocs/look/index.php",
+		"/C/xampp/htdocs/look/db/mysql_conf.php",
+		"/C/xampp/htdocs/look/visual_year_avg/index.php",
+		"/C/xampp/php/php.ini",
+		"/C/xampp/htdocs/look/pallet/composer.json",
+		"/C/Users/Марина/Downloads/nJSIaRt3cmVe464y/bitrix/components/bitrix/menu/class.php",
+		"/C/WebServers/home/localhost/www/json/index.php",
+		"/C/WebServers/home/localhost/www/json/index.html",
+		"/C/Users/Марина/Downloads/color-thief-php-master/color-thief-php-master/lib/ColorThief/ColorThief.php",
+		"/C/Users/Марина/Downloads/color-thief-php-master/color-thief-php-master/composer.json",
+		"/C/WebServers/usr/local/php5/php.ini",
+		"/C/WebServers/home/localhost/www/look/get_pallet/index.php",
+		"/C/Users/Марина/Desktop/ajax_form.php",
+		"/C/Users/Марина/Downloads/McH2Oo8HoxjbnB5h/www/space-mind.ru/bitrix/templates/qwelp/components/qwelp/billet.empty_infoblock/q_form_write_to_us/ajax_form.php",
+		"/C/Users/Марина/Desktop/icons-apple.txt",
+		"/C/WebServers/home/localhost/www/json/php/index.php",
+		"/C/WebServers/home/localhost/www/look/index.php",
+		"/C/Users/Марина/Desktop/send_email.php",
+		"/C/Users/Марина/Desktop/test.php",
+		"/C/Users/Марина/Desktop/магистр/паттерны/shared_keys.js",
+		"/C/Users/Марина/Desktop/12.зрз",
+		"/C/WebServers/home/localhost/www/look/age/index.php",
+		"/C/WebServers/home/localhost/www/look/year/index.php",
+		"/C/WebServers/home/localhost/www/look/visual_year/index.php",
+		"/C/WebServers/home/localhost/www/look/visual_year_avg/index.php",
+		"/C/WebServers/home/localhost/www/look/visual_place_year_avg/index.php",
+		"/C/Users/Марина/Downloads/color-thief-php-master/color-thief-php-master/lib/ColorThief/PQueue.php",
+		"/C/WebServers/home/localhost/www/look/visual_place_year/index.php",
+		"/C/WebServers/home/localhost/www/look/place/index.php",
+		"/C/WebServers/home/localhost/www/iframe/index.html",
+		"/C/WebServers/home/localhost/www/db/connection.php",
+		"/C/WebServers/home/localhost/www/parsing/index.php",
+		"/C/WebServers/home/localhost/www/work/demo.php",
+		"/C/Users/Марина/Downloads/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css",
+		"/C/WebServers/home/localhost/www/work/script.js",
+		"/C/Users/Марина/Downloads/266/index2.html",
+		"/C/Users/Марина/Downloads/266/style.css",
+		"/C/WebServers/home/localhost/www/look/visual_avg/index.php",
+		"/C/Users/Марина/Downloads/ы/font-awesome-4.7.0/css/font-awesome.min.css",
+		"/C/Users/Марина/Downloads/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.css",
+		"/C/WebServers/home/localhost/www/look/db/mysql_conf.php",
+		"/C/Users/Марина/Downloads/scorm_video_horizon_good_11/apiwrapper11.js",
+		"/C/Users/Марина/Downloads/scorm_video_horizon_good_11/imsmanifest.xml",
+		"/C/Users/Марина/Downloads/scorm_video_horizon_good_11/index.html",
+		"/C/WebServers/denwer/www/denwer/bitrixsetup.php",
+		"/C/Users/Марина/Downloads/i5ol24sJgxiHLvso/bitrix/templates/aspro-resort/components/bitrix/news.detail/front_gallery/template.php",
+		"/C/Users/Марина/Downloads/89oWbfG1k4Ci5xdH/bitrix/templates/aspro-resort/components/sok/medialib.photogal/gallery_main/template.php",
+		"/C/WebServers/home/localhost/www/db/function.php",
+		"/C/Users/Марина/Downloads/footer.php",
+		"/C/Users/Марина/Desktop/работа/crsvos/footer.php",
+		"/C/Users/Марина/Desktop/работа/crsvos/styles.css",
+		"/C/Users/Марина/Desktop/работа/crsvos/index.php",
+		"/C/Users/Марина/Desktop/работа/нано/index.php",
+		"/C/Users/Марина/Desktop/работа/нано/template.php",
+		"/C/WebServers/home/localhost/www/parsing/8(800) 500-84-06 (бесплатно по всей России), 8(495",
+		"/C/Users/Марина/Desktop/работа/crsvos/header.php",
+		"/C/Users/Марина/Desktop/работа/crsvos/contacts-site-phone.php",
+		"/C/Users/Марина/Desktop/работа/нано/header.php",
+		"/C/Users/Марина/Desktop/работа/нано/footer.php",
+		"/C/Users/Марина/Desktop/работа/нано/footer-phone.php",
+		"/C/Users/Марина/Desktop/работа/нано/header-info.php"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"C:\\Users\\Марина\\Desktop\\проект с мебелью\\архив\\_\\bitrix\\templates\\ms_universal_red\\components\\bitrix\\menu\\left-tree"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"select_img",
+			"data-price",
+			"data-price'",
+			"select_img",
+			"actualItem",
+			"dmpdeliveryCost",
+			"dmpdeliveryCost_mob",
+			"cost",
+			"totalCost",
+			"order-items-form",
+			"include",
+			"goods__box",
+			"SOA_TEMPL_SUM_IT",
+			"res",
+			"order_form_content",
+			"итого",
+			"media-query-show_mobile",
+			"footer__middle",
+			"subscribe__icons-wrapper",
+			"уровни доступности",
+			"navbar",
+			"navbar-fixed-top",
+			"demo",
+			"#",
+			"Веб",
+			"footer",
+			"font-size",
+			"70px",
+			"slide1",
+			"video",
+			"video-",
+			"about",
+			"slide",
+			"basket",
+			"insert",
+			"openssl",
+			"openssl.dll",
+			"extension=php_openssl.dll",
+			"openss",
+			"short_open_tag",
+			"base",
+			"header",
+			"include_path",
+			"quantize",
+			"GetLookAtPlace",
+			"fonts",
+			"font",
+			"fonts",
+			"<small",
+			"<a",
+			"GEt",
+			"Файл",
+			"FILE",
+			"FILTER_NAME",
+			"input",
+			"myAPI",
+			";extension=php_openssl.dll",
+			"sold",
+			"продано",
+			".bx-firefox .front:not(.banners-big) .btn-default.white",
+			"c-",
+			"header",
+			"main-content",
+			"last_seen",
+			"title_",
+			".news",
+			".news.front .item .image img",
+			"main_map_block",
+			"contacts_map",
+			"main_map_block",
+			"right",
+			"fa-",
+			"fa",
+			"hover",
+			"img",
+			"ntc",
+			"img",
+			"thumbnail",
+			"border",
+			"gaming",
+			"blue",
+			"galthumbnails",
+			"galspan2",
+			"tru",
+			"pxl",
+			"calc",
+			"-10px",
+			"173",
+			"248",
+			"8px !important;",
+			"scroll_ctrl",
+			"22",
+			"parent",
+			"ul",
+			"border",
+			"border-bottom",
+			"fsort ul:hover:not(.first)",
+			".fsort ul:hover:not(.first)",
+			".fsort ul:hover:not(.first) .parent_li",
+			".fsort ul:hover:not(.first) .parent_li, .msort ul:hover:not(.first) .parent_li, .psort ul:hover:not(.firs",
+			".fsort ul:hover:not(.first) .parent_li, .msort ul:hover:not(.first) .parent_li, .psort ul:hover:not(.first) .parent_li",
+			"width: calc(100% - 10px) !important;",
+			"li",
+			"color",
+			"audio",
+			"urls",
+			"starting__url",
+			".bottom-menu .item .title a",
+			"social",
+			"main",
+			"232",
+			"footer",
+			"body",
+			"main_map_block",
+			"main",
+			"main_map_block",
+			"main",
+			"main_map_block",
+			"main",
+			"top-des",
+			"top-link-text",
+			"173px",
+			".discounts",
+			"body.esofas div.discounts",
+			"max-h",
+			"max-",
+			"z-index",
+			"arSort"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"/",
+			": url('img/",
+			": url(img/",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 88.0
+	},
+	"pinned_build_system": "",
+	"project": "poj_sublime.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 325.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
