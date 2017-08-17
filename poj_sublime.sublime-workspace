@@ -323,6 +323,64 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "index.js",
+			"settings":
+			{
+				"buffer_size": 2815,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/contact.jade",
+			"settings":
+			{
+				"buffer_size": 919,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/add_article.jade",
+			"settings":
+			{
+				"buffer_size": 1504,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "views/parts_admin/_head.jade",
+			"settings":
+			{
+				"buffer_size": 1177,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "views/parts_admin/_menu.jade",
+			"settings":
+			{
+				"buffer_size": 1627,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "views/layouts/_admin.jade",
+			"settings":
+			{
+				"buffer_size": 32,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "views/layouts/_default.jade",
+			"settings":
+			{
+				"buffer_size": 258,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -331,10 +389,58 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 392.0,
-		"last_filter": "Package Control: ",
+		"height": 127.0,
+		"last_filter": "push",
 		"selected_items":
 		[
+			[
+				"push",
+				"Git: Push"
+			],
+			[
+				"qu",
+				"Git: Quick Commit (repo)"
+			],
+			[
+				"add",
+				"Git: Add All"
+			],
+			[
+				"pu",
+				"Git: Push"
+			],
+			[
+				"q",
+				"Git: Quick Commit (repo)"
+			],
+			[
+				"pus",
+				"Git: Push"
+			],
+			[
+				"qui",
+				"Git: Quick Commit (repo)"
+			],
+			[
+				"quick commit",
+				"Git: Quick Commit (repo)"
+			],
+			[
+				"git: comm",
+				"Git: Quick Commit (repo)"
+			],
+			[
+				"git: add",
+				"Git: Add All"
+			],
+			[
+				"git: co",
+				"Git: Diff Tool Current File"
+			],
+			[
+				"git: commi",
+				"Git: Commit"
+			],
 			[
 				"Package Control: ",
 				"Package Control: Install Package"
@@ -373,13 +479,26 @@
 	},
 	"expanded_folders":
 	[
-		"/C/my_projects/devblog"
+		"/C/my_projects/devblog",
+		"/C/my_projects/devblog/public",
+		"/C/my_projects/devblog/views",
+		"/C/my_projects/devblog/views/layouts",
+		"/C/my_projects/devblog/views/parts_admin"
 	],
 	"file_history":
 	[
+		"/C/my_projects/devblog/test.txt",
+		"/C/Users/Марина/Desktop/sftp-config.json",
+		"/C/Users/Марина/Desktop/proj/sftp-config.json",
+		"/C/Users/Марина/Downloads/devblog-master/devblog/html/ArticleBig.html",
+		"/C/my_projects/devblog/views/layouts/_admin.jade",
+		"/C/my_projects/devblog/views/layouts/_default.jade",
+		"/C/my_projects/devblog/views/add_article.jade",
+		"/C/my_projects/devblog/views/parts_admin/_footer.jade",
+		"/C/my_projects/devblog/views/parts_admin/_head.jade",
+		"/C/Users/Марина/AppData/Roaming/Sublime Text 3/Packages/Git/Git.sublime-settings",
 		"/C/Users/Марина/AppData/Roaming/Sublime Text 3/Packages/Gist/Default (Windows).sublime-keymap",
 		"/C/Users/Марина/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
-		"/C/Users/Марина/Desktop/proj/sftp-config.json",
 		"/C/WebServers/home/localhost/www/olimp/db/connection.php",
 		"/C/WebServers/home/localhost/www/look/db/function.php",
 		"/C/Users/Марина/Desktop/proj/function.php",
@@ -495,20 +614,11 @@
 		"/C/Users/Марина/Downloads/footer.php",
 		"/C/Users/Марина/Desktop/работа/crsvos/footer.php",
 		"/C/Users/Марина/Desktop/работа/crsvos/styles.css",
-		"/C/Users/Марина/Desktop/работа/crsvos/index.php",
-		"/C/Users/Марина/Desktop/работа/нано/index.php",
-		"/C/Users/Марина/Desktop/работа/нано/template.php",
-		"/C/WebServers/home/localhost/www/parsing/8(800) 500-84-06 (бесплатно по всей России), 8(495",
-		"/C/Users/Марина/Desktop/работа/crsvos/header.php",
-		"/C/Users/Марина/Desktop/работа/crsvos/contacts-site-phone.php",
-		"/C/Users/Марина/Desktop/работа/нано/header.php",
-		"/C/Users/Марина/Desktop/работа/нано/footer.php",
-		"/C/Users/Марина/Desktop/работа/нано/footer-phone.php",
-		"/C/Users/Марина/Desktop/работа/нано/header-info.php"
+		"/C/Users/Марина/Desktop/работа/crsvos/index.php"
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -523,6 +633,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"ctrl",
 			"select_img",
 			"data-price",
 			"data-price'",
@@ -649,8 +760,7 @@
 			"body.esofas div.discounts",
 			"max-h",
 			"max-",
-			"z-index",
-			"arSort"
+			"z-index"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -672,8 +782,237 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2815,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1499,
+								1499
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 684.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "views/contact.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 919,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								82,
+								25
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "views/add_article.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1504,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								779,
+								779
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 399.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "views/parts_admin/_head.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1177,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "views/parts_admin/_menu.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1627,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								428,
+								428
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "views/layouts/_admin.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 32,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								32,
+								32
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "views/layouts/_default.jade",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 258,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								189,
+								176
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -711,6 +1050,10 @@
 	"output.find_results":
 	{
 		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 80.0
 	},
 	"output.sftp":
 	{
@@ -758,7 +1101,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 325.0,
+	"side_bar_width": 323.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
