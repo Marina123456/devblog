@@ -66,6 +66,15 @@ app.post('/api/articlesSmall', function(req, res) {
         } else { console.log(err); }
     });
 });
+app.post('/api/article/',function(req,res){
+    var article = new Article({
+        name: req.body.name,
+        category: req.body.category,
+        image: req.body.image,
+        message: req.body.message
+    });
+    return res.send({ status: 'OK', project:article });
+});
 app.post('/api/project', function(req, res) {
     //console.log(req.body);
     var project = new Project({

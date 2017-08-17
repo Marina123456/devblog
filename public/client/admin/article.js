@@ -2,7 +2,21 @@ let buttonFormAdd=document.querySelector('#add-article-but');
 buttonFormAdd.addEventListener('click',function(){
 	
 	let strPost=$('#add-article').serialize();
-	let editorData = CKEDITOR.instances['editor1'].getData();
+	let editorData = CKEDITOR.instances['message'].getData();
 	strPost+=editorData;
-	alert(strPost);
+
+	//alert(strPost);
+	
+	let formData = new FormData();
+	formData.append( "json",strPost);
+
+	fetch("/api/article/", {
+    	method: "POST",
+    	body: formData
+	})
+	.then(function(res){ return res.json(); })
+	.then(function(data){
+	 	console.log( data ) 
+	});
+	
 });
