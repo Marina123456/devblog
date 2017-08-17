@@ -67,13 +67,13 @@ app.post('/api/articlesSmall', function(req, res) {
     });
 });
 app.post('/api/article/',function(req,res){
-    var article = new Article({
+    /*var article = new Article({
         name: req.body.name,
         category: req.body.category,
         image: req.body.image,
         message: req.body.message
-    });
-    return res.send({ status: 'OK', project:article });
+    });*/
+    return res.send(req.body);
 });
 app.post('/api/project', function(req, res) {
     //console.log(req.body);
