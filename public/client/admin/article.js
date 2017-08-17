@@ -1,4 +1,6 @@
 let buttonFormAdd=document.querySelector('#add-article-but');
 buttonFormAdd.addEventListener('click',function(){
-	alert('test');
+	
+	let strPost=$('#add-article').serialize();
+	alert(strPost);
 });
