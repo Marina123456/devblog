@@ -14,7 +14,7 @@ buttonFormAdd.addEventListener('click',function(){
     	method: "POST",
     	body: formData
 	})
-	.then(function(res){ console.log(res) return res.json(); })
+	.then(function(res){ console.log(res) return res.text(); })
 	.then(function(data){
 	 	console.log( data ) 
 	});
