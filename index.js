@@ -49,7 +49,7 @@ app.get('/contact', function (req, res) {
 });
 
 app.get('/admin/add-article', function (req, res) {
-    res.render('add-article');
+    res.render('add_article');
 });
 
 app.post('/api/articlesSmall', function(req, res) {
