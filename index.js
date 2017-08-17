@@ -48,7 +48,7 @@ app.get('/contact', function (req, res) {
     });
 });
 
-app.get('/admin/add-article', function (req, res) {
+app.get('/admin-article', function (req, res) {
     res.render('add_article');
 });
 
