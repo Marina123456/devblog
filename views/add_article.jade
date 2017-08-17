@@ -13,19 +13,19 @@ block content
                 h4.mb
                   i.fa.fa-angle-right
                   | Длинная статья
-                form.form-horizontal.style-form(method='get')
+                form#add-article.form-horizontal.style-form(method='get')
                   .form-group
                     label.col-sm-2.col-sm-2.control-label Название
                     .col-sm-10
-                      input.form-control(type='text')
+                      input#name.form-control(type='text')
                   .form-group
                     label.col-sm-2.col-sm-2.control-label Категория
                     .col-sm-10
-                      input.form-control(type='text')
+                      input#category.form-control(type='text')
                   .form-group
                     label.col-sm-2.col-sm-2.control-label URL-картинки
                     .col-sm-10
-                      input.form-control(type='text')
+                      input#image.form-control(type='text')
                       span.help-block Добавить "адрес" картинки, чтобы не закачивать её на сервер
                   .form-group
                     label.col-sm-2.col-sm-2.control-label Текст статьи
@@ -34,6 +34,6 @@ block content
                   .form-group
                     label.col-sm-2.col-sm-2.control-label Последний этап
                     .col-sm-10
-                      button.btn.btn-theme02 Сохранить статью
+                      button#add-article-but.btn.btn-theme02 Сохранить статью
             
       
