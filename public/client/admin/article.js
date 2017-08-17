@@ -1,14 +1,18 @@
 let buttonFormAdd=document.querySelector('#add-article-but');
 buttonFormAdd.addEventListener('click',function(){
 	
-	let strPost=$('#add-article').serialize();
-	let editorData = CKEDITOR.instances['message'].getData();
-	strPost+=editorData;
-
-	console.log(strPost);
+	let name=document.querySelector('#add-article #name');
+	let category=document.querySelector('#add-article #category');
+	let image=document.querySelector('#add-article #image');
+	let message = CKEDITOR.instances['message'].getData();
+	
+	//console.log(strPost);
 	
 	let formData = new FormData();
-	formData.append( "json",strPost);
+	formData.append( "name",name);
+	formData.append( "category",category);
+	formData.append( "image",image);
+	formData.append( "message",message);
 
 	fetch("/api/article/", {
     	method: "POST",
