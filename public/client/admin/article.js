@@ -5,7 +5,7 @@ buttonFormAdd.addEventListener('click',function(){
 	let editorData = CKEDITOR.instances['message'].getData();
 	strPost+=editorData;
 
-	//alert(strPost);
+	console.log(strPost);
 	
 	let formData = new FormData();
 	formData.append( "json",strPost);
