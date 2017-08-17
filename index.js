@@ -48,8 +48,8 @@ app.get('/contact', function (req, res) {
     });
 });
 
-app.get('/add-article/', function (req, res) {
-    res.send('ArticleBig.html');
+app.get('/admin/add-article', function (req, res) {
+    res.render('add-article');
 });
 
 app.post('/api/articlesSmall', function(req, res) {

@@ -1,0 +1,40 @@
+section#main-content
+        section.wrapper
+          h3
+            i.fa.fa-angle-right
+            | Добавить длинную статью
+          // BASIC FORM ELELEMNTS
+          .row.mt
+            .col-lg-12
+              .form-panel
+                h4.mb
+                  i.fa.fa-angle-right
+                  | Длинная статья
+                form.form-horizontal.style-form(method='get')
+                  .form-group
+                    label.col-sm-2.col-sm-2.control-label Название
+                    .col-sm-10
+                      input.form-control(type='text')
+                  .form-group
+                    label.col-sm-2.col-sm-2.control-label Категория
+                    .col-sm-10
+                      input.form-control(type='text')
+                  .form-group
+                    label.col-sm-2.col-sm-2.control-label URL-картинки
+                    .col-sm-10
+                      input.form-control(type='text')
+                      span.help-block Добавить "адрес" картинки, чтобы не закачивать её на сервер
+                  .form-group
+                    label.col-sm-2.col-sm-2.control-label Текст статьи
+                    .col-sm-10
+                      textarea#editor1(name='editor1', rows='10', cols='80')
+                  .form-group
+                    label.col-sm-2.col-sm-2.control-label Последний этап
+                    .col-sm-10
+                      button.btn.btn-theme02 Сохранить статью
+            // col-lg-12
+          // /row
+      // /MAIN CONTENT
+      // main content end
+      // footer start
+      
