@@ -20,10 +20,11 @@ app.set('view engine', 'jade');
 
 
 //CRUD Article
-var ArticleSmallModel = require('./libs/mongoose').ArticleSmallModel;
-var ArticleBigModel = require('./libs/mongoose').ArticleBigModel;
-var BooksSmallModel = require('./libs/mongoose').BooksSmallModel;
-var Project = require('./libs/mongoose').Project;
+let ArticleSmallModel = require('./libs/mongoose').ArticleSmallModel;
+//let ArticleBigModel = require('./libs/mongoose').ArticleBigModel;
+let BooksSmallModel = require('./libs/mongoose').BooksSmallModel;
+let Project = require('./libs/mongoose').Project;
+let Article = require('./libs/mongoose').Article;
 //----//
 
 app.get('/', function (req, res) {
@@ -73,8 +74,14 @@ app.post('/api/article/',function(req,res){
         image: req.body.image,
         message: req.body.message
     });
+    article.save(function (err) {
+        if (!err) {
+            console.log("articleSmall created");
+            return res.send({ status: 'OK', article:article });
+        } else { console.log(err); }
+    });
     
-    return res.send(article);
+    //return res.send(article);
 });
 app.post('/api/project', function(req, res) {
     //console.log(req.body);

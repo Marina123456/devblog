@@ -30,6 +30,13 @@ var Project = new Schema({
     description: { type: String, required: true },
     modified: { type: Date, default: Date.now }
 });
+let Article = new Schema({
+    name: { type: String, required: true },
+    category: { type: String, required: true },
+    image: { type: String},
+    modified: { type: Date, default: Date.now },
+    message: { type: String, required: true }
+});
 var ArticleBig = new Schema({
     title: { type: String, required: true },
     description: { type: String, required: true },
@@ -43,8 +50,11 @@ var BooksSmall = new Schema({
     image:[Image]
 });
 
-var Project = mongoose.model('Project', Project);
+let Project = mongoose.model('Project', Project);
 module.exports.Project = Project;
+
+let Article = mongoose.model('Article', Project);
+module.exports.Article = Article;
 
 var ArticleSmallModel = mongoose.model('ArticleSmall', ArticleSmall);
 module.exports.ArticleSmallModel = ArticleSmallModel;
