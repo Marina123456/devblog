@@ -80,7 +80,7 @@ app.post('/api/article/',function(req,res){
         image: 'test',
         message: 'test'
     };
-    return res.send(article);
+    return res.send(req.body);
 });
 app.post('/api/project', function(req, res) {
     //console.log(req.body);
