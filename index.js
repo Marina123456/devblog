@@ -67,20 +67,14 @@ app.post('/api/articlesSmall', function(req, res) {
     });
 });
 app.post('/api/article/',function(req,res){
-    /*var article = new Article({
+    let article = new Article({
         name: req.body.name,
         category: req.body.category,
         image: req.body.image,
         message: req.body.message
-    });*/
-    console.log(req.body);
-    var article = {
-        name: req.body,
-        category: 'test',
-        image: 'test',
-        message: 'test'
-    };
-    return res.send(req.body);
+    });
+    
+    return res.send(article);
 });
 app.post('/api/project', function(req, res) {
     //console.log(req.body);
