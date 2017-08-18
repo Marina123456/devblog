@@ -8,21 +8,22 @@ buttonFormAdd.addEventListener('click',function(){
 		message: CKEDITOR.instances['message'].getData()
 	};
 	
-	console.log(article);
+	//console.log(article);
 	$.ajax({
 		type: 'post',
 		url: '/api/article/',
 		data: article,
   		success: function(data){
+  			//alert('данные внесены!');
     			console.log( data );
   		}
 	});
 	
 	
-	let formData = new FormData();
+	/*let formData = new FormData();
 	formData.append('name',document.querySelector('#add-article #name').value);
-		
-	/*fetch("/api/article/", {
+
+	fetch("/api/article/", {
     	method: "POST",
     	body: JSON.stringify(article)
 	})
