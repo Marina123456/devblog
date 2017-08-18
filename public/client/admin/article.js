@@ -11,10 +11,11 @@ buttonFormAdd.addEventListener('click',function(){
 	console.log(article);
 	
 	let formData = new FormData();
-	formData.append("json",article);
+	formData.append("json",JSON.stringify(article);
+		
 	fetch("/api/article/", {
     	method: "POST",
-    	body: JSON.stringify(formData)
+    	body: formData
 	})
 	.then(function(res){ console.log(res); return res.text(); })
 	.then(function(data){
