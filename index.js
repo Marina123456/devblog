@@ -73,7 +73,7 @@ app.post('/api/article/',function(req,res){
         image: req.body.image,
         message: req.body.message
     });*/
-    return res.send(req.body);
+    return res.send(req);
 });
 app.post('/api/project', function(req, res) {
     //console.log(req.body);
