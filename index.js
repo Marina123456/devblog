@@ -74,7 +74,7 @@ app.post('/api/article/',function(req,res){
         message: req.body.message
     });*/
     var article = {
-        name: 'test',
+        name: req.body.article.name,
         category: 'test',
         image: 'test',
         message: 'test'
