@@ -12,6 +12,7 @@ buttonFormAdd.addEventListener('click',function(){
 	$.ajax({
 		type: 'post',
 		url: '/api/article/',
+		data: article,
   		success: function(data){
     			console.log( data );
   		}
