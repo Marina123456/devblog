@@ -7,10 +7,10 @@ buttonFormAdd.addEventListener('click',function(){
 		image: document.querySelector('#add-article #image');
 		message: CKEDITOR.instances['message'].getData();
 	}	
-	//console.log(strPost);
+	console.log(article);
 	
 	let formData = new FormData();
-	formData.append( "article",article);
+	formData.append("article",article);
 	
 	fetch("/api/article/", {
     	method: "POST",
