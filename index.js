@@ -81,7 +81,6 @@ app.post('/api/article/',function(req,res){
         } else { console.log(err); }
     });
     
-    //return res.send(article);
 });
 app.post('/api/project', function(req, res) {
     //console.log(req.body);
