@@ -2,9 +2,9 @@ let buttonFormAdd=document.querySelector('#add-article-but');
 buttonFormAdd.addEventListener('click',function(){
 	
 	let article={
-		name: document.querySelector('#add-article #name'),
-		category: document.querySelector('#add-article #category'),
-		image: document.querySelector('#add-article #image'),
+		name: document.querySelector('#add-article #name').value,
+		category: document.querySelector('#add-article #category').value,
+		image: document.querySelector('#add-article #image').value,
 		message: CKEDITOR.instances['message'].getData()
 	};
 	
