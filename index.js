@@ -73,7 +73,13 @@ app.post('/api/article/',function(req,res){
         image: req.body.image,
         message: req.body.message
     });*/
-    return res.send('test');
+    var article = new Article({
+        name: 'test',
+        category: 'test',
+        image: 'test',
+        message: 'test'
+    });
+    return res.send(article);
 });
 app.post('/api/project', function(req, res) {
     //console.log(req.body);
