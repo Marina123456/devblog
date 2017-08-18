@@ -6,7 +6,8 @@ buttonFormAdd.addEventListener('click',function(){
 		category: document.querySelector('#add-article #category');
 		image: document.querySelector('#add-article #image');
 		message: CKEDITOR.instances['message'].getData();
-	}	
+	};
+	
 	console.log(article);
 	
 	let formData = new FormData();
