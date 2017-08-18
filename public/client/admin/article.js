@@ -11,7 +11,7 @@ buttonFormAdd.addEventListener('click',function(){
 	console.log(article);
 	
 	let formData = new FormData();
-	formData.append("article",JSON.stringify(article));
+	formData.append("json",JSON.stringify(article));
 	
 	fetch("/api/article/", {
     	method: "POST",
