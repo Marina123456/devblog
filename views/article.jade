@@ -7,10 +7,10 @@ block content
     .my-slider(style='background-size: cover;')
     .my-cartochka-wrapper
         .my-cartochka-cover-big
-            .my-cartochka-title #{article.name}                
+            .my-cartochka-title 
+                span#{article.name}                
             .my-cartochka-category
-                #{article.category}
+                span#{article.category}
             img.my-cartochka-cover-big-img(src='#{article.image}')
-            .my-cartochka-cover-big-text
-                #{article.message}
+            .my-cartochka-cover-big-text#{article.message}
           
