@@ -1,9 +1,11 @@
-var mongoose    = require('mongoose');
+var mongoose    = require('mongoose'),
+    autoIncrement = require('mongoose-auto-increment');
 //var log         = require('./log')(module);
 
 
 var config = require('./config');
 mongoose.connect(config.get('mongoose:uri'));
+autoIncrement.initialize(connection);
 var db = mongoose.connection;
 
 db.on('error', function (err) {
@@ -37,6 +39,15 @@ var Article = new Schema({
     modified: { type: Date, default: Date.now },
     message: { type: String, required: true }
 });
+
+Article.plugin(autoIncrement.plugin, 'Article');
+Article.plugin(autoIncrement.plugin, { 
+    model: 'Article', 
+    field: 'articleId', 
+    startAt: 1,
+    incrementBy: 1
+});
+
 var ArticleBig = new Schema({
     title: { type: String, required: true },
     description: { type: String, required: true },

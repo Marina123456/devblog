@@ -8,28 +8,15 @@ buttonFormAdd.addEventListener('click',function(){
 		message: CKEDITOR.instances['message'].getData()
 	};
 	
-	//console.log(article);
 	$.ajax({
 		type: 'post',
 		url: '/api/article/',
 		data: article,
   		success: function(data){
-  			//alert('данные внесены!');
-    			console.log( data );
+  			alert('данные внесены!');
+    		console.log( data );
   		}
 	});
 	
-	
-	/*let formData = new FormData();
-	formData.append('name',document.querySelector('#add-article #name').value);
-
-	fetch("/api/article/", {
-    	method: "POST",
-    	body: JSON.stringify(article)
-	})
-	.then(function(res){ console.log(res); return res.text(); })
-	.then(function(data){
-	 	console.log( data );
-	});*/
 	
 });

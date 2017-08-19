@@ -1,10 +1,8 @@
 var express = require('express');
 var app = express();
 var server = require('http').createServer(app);
-//var io = require('socket.io')(server);
 var port = process.env.PORT || 3000;
 var config = require('./libs/config');
-
 app.listen(port, function(){
     console.log('Express server listening on port ' + config.get('port'));
 });
@@ -15,13 +13,11 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 }));
 
 app.use(express.static('public'));
-
 app.set('view engine', 'jade');
 
 
 //CRUD Article
 let ArticleSmallModel = require('./libs/mongoose').ArticleSmallModel;
-//let ArticleBigModel = require('./libs/mongoose').ArticleBigModel;
 let BooksSmallModel = require('./libs/mongoose').BooksSmallModel;
 let Project = require('./libs/mongoose').Project;
 let Article = require('./libs/mongoose').Article;
@@ -39,22 +35,25 @@ app.get('/projects', function (req, res) {
     });
 });
 app.get('/links', function (req, res) {
-    ArticleSmallModel.find(function (err, articlesSmall) {
-        res.render('links' );
-    });
+    /*ArticleSmallModel.find(function (err, articlesSmall) {
+        
+    });*/
+    res.render('links' );
 });
 app.get('/contact', function (req, res) {
-    ArticleSmallModel.find(function (err, articlesSmall) {
-        res.render('contact');
-    });
+    res.render('contact');
 });
 
 app.get('/admin-article', function (req, res) {
     res.render('add_article');
 });
 
-app.post('/api/articlesSmall', function(req, res) {
-    //console.log(req.body);
+app.get('/article/:id', function (req, res) {
+    ArticleSmallModel.find(
+    //res.render('add_article');
+});
+/*app.post('/api/articlesSmall', function(req, res) {
+    
     var articleSmall = new ArticleSmallModel({
         title: req.body.title,
         description: req.body.description,
@@ -66,7 +65,7 @@ app.post('/api/articlesSmall', function(req, res) {
             return res.send({ status: 'OK', articleSmall:articleSmall });
         } else { console.log(err); }
     });
-});
+});*/
 app.post('/api/article/',function(req,res){
     let article = new Article({
         name: req.body.name,
@@ -83,7 +82,6 @@ app.post('/api/article/',function(req,res){
     
 });
 app.post('/api/project', function(req, res) {
-    //console.log(req.body);
     var project = new Project({
         title: req.body.title,
         description: req.body.description
@@ -95,8 +93,7 @@ app.post('/api/project', function(req, res) {
         } else { console.log(err); }
     });
 });
-app.delete('/api/articlesSmall', function(req, res) {
-    //console.log(req.body);
+/*app.delete('/api/articlesSmall', function(req, res) {
     var articleSmall = new ArticleSmallModel({});
     articleSmall.remove(function (err) {
         if (!err) {
@@ -104,4 +101,4 @@ app.delete('/api/articlesSmall', function(req, res) {
             return res.send({ status: 'OK', articleSmall:articleSmall });
         } else { console.log(err); }
     });
-});
+});*/
