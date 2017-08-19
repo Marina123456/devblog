@@ -35,9 +35,6 @@ app.get('/projects', function (req, res) {
     });
 });
 app.get('/links', function (req, res) {
-    /*ArticleSmallModel.find(function (err, articlesSmall) {
-        
-    });*/
     res.render('links' );
 });
 app.get('/contact', function (req, res) {
@@ -48,10 +45,13 @@ app.get('/admin-article', function (req, res) {
     res.render('add_article');
 });
 
-/*app.get('/article/:id', function (req, res) {
-    ArticleSmallModel.find(
-    res.render('add_article');
-});*/
+app.get('/article/:id', function (req, res) {
+    Article.findOne({ 'articleId': req.params["id"]}, function(err, article){
+        res.render('article',{article:article});
+    });
+    
+});
+
 /*app.post('/api/articlesSmall', function(req, res) {
     
     var articleSmall = new ArticleSmallModel({
