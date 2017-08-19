@@ -1,14 +1,13 @@
 var mongoose    = require('mongoose');
-//var log         = require('./log')(module);
 
 
 var config = require('./config');
 mongoose.connect(config.get('mongoose:uri'));
 
 var autoIncrement = require('mongoose-auto-increment');
-    autoIncrement.initialize(connection);
+    
 var db = mongoose.connection;
-
+autoIncrement.initialize(db);
 db.on('error', function (err) {
     console.log('connection error:', err.message);
 });
