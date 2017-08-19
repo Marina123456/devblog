@@ -41,7 +41,7 @@ var ArticleSchema = new Schema({
     message: { type: String, required: true }
 });
 
-//Article.plugin(autoIncrement.plugin, 'Article');
+ArticleSchema.plugin(autoIncrement.plugin, 'Article');
 ArticleSchema.plugin(autoIncrement.plugin, { 
     model: 'Article', 
     field: 'articleId', 
