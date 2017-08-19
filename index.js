@@ -48,10 +48,10 @@ app.get('/admin-article', function (req, res) {
     res.render('add_article');
 });
 
-app.get('/article/:id', function (req, res) {
+/*app.get('/article/:id', function (req, res) {
     ArticleSmallModel.find(
-    //res.render('add_article');
-});
+    res.render('add_article');
+});*/
 /*app.post('/api/articlesSmall', function(req, res) {
     
     var articleSmall = new ArticleSmallModel({
