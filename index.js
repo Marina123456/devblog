@@ -47,8 +47,8 @@ app.get('/admin-article', function (req, res) {
 
 app.get('/article/:id', function (req, res) {
     Article.findOne({ 'articleId': req.params["id"]}, function(err, article){
-        //res.render('article',{article:article});
-        res.send(article.name);
+        res.render('article',{article:article});
+        //res.send(article.name);
     });
     
 });
