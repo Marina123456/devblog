@@ -33,7 +33,7 @@ var Project = new Schema({
     description: { type: String, required: true },
     modified: { type: Date, default: Date.now }
 });
-var Article = new Schema({
+var ArticleSchema = new Schema({
     name: { type: String, required: true },
     category: { type: String, required: true },
     image: { type: String},
@@ -42,7 +42,7 @@ var Article = new Schema({
 });
 
 //Article.plugin(autoIncrement.plugin, 'Article');
-Article.plugin(autoIncrement.plugin, { 
+ArticleSchema.plugin(autoIncrement.plugin, { 
     model: 'Article', 
     field: 'articleId', 
     startAt: 1,
@@ -65,7 +65,7 @@ var BooksSmall = new Schema({
 var Project = mongoose.model('Project', Project);
 module.exports.Project = Project;
 
-var Article = mongoose.model('Article', Article);
+var Article = mongoose.model('Article', ArticleSchema);
 module.exports.Article = Article;
 
 var ArticleSmallModel = mongoose.model('ArticleSmall', ArticleSmall);
