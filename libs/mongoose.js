@@ -1,11 +1,12 @@
-var mongoose    = require('mongoose'),
-    autoIncrement = require('mongoose-auto-increment');
+var mongoose    = require('mongoose');
 //var log         = require('./log')(module);
 
 
 var config = require('./config');
 mongoose.connect(config.get('mongoose:uri'));
-autoIncrement.initialize(connection);
+
+var autoIncrement = require('mongoose-auto-increment');
+    autoIncrement.initialize(connection);
 var db = mongoose.connection;
 
 db.on('error', function (err) {
@@ -40,7 +41,7 @@ var Article = new Schema({
     message: { type: String, required: true }
 });
 
-Article.plugin(autoIncrement.plugin, 'Article');
+//Article.plugin(autoIncrement.plugin, 'Article');
 Article.plugin(autoIncrement.plugin, { 
     model: 'Article', 
     field: 'articleId', 
