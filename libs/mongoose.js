@@ -40,7 +40,6 @@ var ArticleSchema = new Schema({
     modified: { type: Date, default: Date.now },
     message: { type: String, required: true }
 });
-
 ArticleSchema.plugin(autoIncrement.plugin, 'Article');
 ArticleSchema.plugin(autoIncrement.plugin, { 
     model: 'Article', 
