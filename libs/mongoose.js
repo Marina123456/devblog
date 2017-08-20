@@ -59,7 +59,7 @@ var BooksSmall = new Schema({
     url: { type: String, required: true },
     image:[Image]
 });
-var User = new Schema({
+var User_admin = new Schema({
     user: { type: String, required: true },
     password: { type: String, required: true }
 });
@@ -69,7 +69,7 @@ module.exports.Project = Project;
 var Article = mongoose.model('Article', ArticleSchema);
 module.exports.Article = Article;
 
-var User = mongoose.model('User', User);
+var User = mongoose.model('User_admin', User_admin);
 module.exports.User = User;
 
 var ArticleSmallModel = mongoose.model('ArticleSmall', ArticleSmall);
