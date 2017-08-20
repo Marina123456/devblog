@@ -92,7 +92,7 @@ app.post('/api/article/',function(req,res){
 app.post('/api/login/',function(req,res){
     let user = req.body.user;
     let password = req.body.password;
-    Article.findOne({ 
+    User.findOne({ 
             'user': user,
             'password': password
         }, function(err, user){
