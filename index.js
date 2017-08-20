@@ -21,6 +21,7 @@ let ArticleSmallModel = require('./libs/mongoose').ArticleSmallModel;
 let BooksSmallModel = require('./libs/mongoose').BooksSmallModel;
 let Project = require('./libs/mongoose').Project;
 let Article = require('./libs/mongoose').Article;
+let User = require('./libs/mongoose').User;
 //----//
 
 app.get('/', function (req, res) {
@@ -86,6 +87,21 @@ app.post('/api/article/',function(req,res){
             return res.send({ status: 'OK', article:article });
         } else { console.log(err); }
     });
+    
+});
+app.post('/api/login/',function(req,res){
+    let user = req.body.user;
+    let password = req.body.user;
+    Article.findOne({ 
+            'user': user,
+            'password': password
+        }, function(err, user){
+            if (user){
+                 res.send({status:'OK'});
+            } else {
+                res.send({status:'NO'});
+            }
+        });   
     
 });
 app.post('/api/project', function(req, res) {

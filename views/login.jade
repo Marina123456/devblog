@@ -6,7 +6,7 @@ html(lang='en')
     meta(name='description', content='')
     meta(name='author', content='Dashboard')
     meta(name='keyword', content='Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina')
-    title DASHGUM - Bootstrap Admin Template
+    title Страница входа
     // Bootstrap core CSS
     link(href='assets/css/bootstrap.css', rel='stylesheet')
     // external css
@@ -28,12 +28,12 @@ html(lang='en')
         form.form-login(action='index.html')
           h2.form-login-heading Вход
           .login-wrap
-            input.form-control(type='text', placeholder='Пользователь', autofocus='')
+            input.form-control#login-user(type='text', placeholder='Пользователь', autofocus='')
             br
-            input.form-control(type='password', placeholder='Пароль')
+            input.form-control#login-password(type='password', placeholder='Пароль')
             br
             br
-            button.btn.btn-theme.btn-block(href='index.html', type='submit')
+            button#form-login-btn.btn.btn-theme.btn-block(href='index.html', type='submit')
               i.fa.fa-lock
               | Войти
     // js placed at the end of the document so the pages load faster
@@ -42,5 +42,6 @@ html(lang='en')
     // BACKSTRETCH
     // You can use an image of whatever size. This script will stretch to fit in any screen size.
     script(type='text/javascript', src='assets/js/jquery.backstretch.min.js')
+    script(type='text/javascript', src='client/admin/login.js')
     script.
       $.backstretch("assets/img/login-bg.jpg", {speed: 500});

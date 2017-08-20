@@ -59,12 +59,18 @@ var BooksSmall = new Schema({
     url: { type: String, required: true },
     image:[Image]
 });
-
+var User = new Schema({
+    user: { type: String, required: true },
+    password: { type: String, required: true }
+});
 var Project = mongoose.model('Project', Project);
 module.exports.Project = Project;
 
 var Article = mongoose.model('Article', ArticleSchema);
 module.exports.Article = Article;
+
+var User = mongoose.model('User', User);
+module.exports.User = User;
 
 var ArticleSmallModel = mongoose.model('ArticleSmall', ArticleSmall);
 module.exports.ArticleSmallModel = ArticleSmallModel;
