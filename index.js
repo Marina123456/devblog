@@ -29,6 +29,9 @@ app.get('/', function (req, res) {
     });
 
 });
+app.get('/login', function (req, res) {
+    res.render('login');
+});
 app.get('/projects', function (req, res) {
     Project.find(function (err, project) {
         res.render('projects',{project: project});
