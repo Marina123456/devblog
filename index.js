@@ -97,9 +97,9 @@ app.post('/api/login/',function(req,res){
             'password': password
         }, function(err, user){
             if (user){
-                 res.send({status:'OK'});
+                 res.send({status:'OK',user:user});
             } else {
-                res.send({status:'NO'});
+                res.send({status:'NO',user:user});
             }
         });   
     
