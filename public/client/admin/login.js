@@ -2,8 +2,8 @@ let loginForm=document.querySelector('#form-login-btn');
 
 loginForm.addEventListener('click',function(){
 	let user_data={
-		user: document.querySelector('#login-user'),
-		password: document.querySelector('#login-password')
+		user: document.querySelector('#login-user').value,
+		password: document.querySelector('#login-password').value
 	};
 	$.ajax({
 		type: 'post',
