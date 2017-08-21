@@ -10,8 +10,11 @@ loginForm.addEventListener('click',function(){
 		url: '/api/login/',
 		data: user_data,
   		success: function(data){
-  			alert('всё ок!');
-    		console.log( data );
+    		if (data.status=='OK') {
+			alert('Всё ок!');
+    		} else {
+    			alert('Введенные данные неверны!');
+    		}
   		}
 	});
 });
