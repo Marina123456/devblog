@@ -92,6 +92,11 @@ app.post('/api/article/',function(req,res){
 app.post('/api/login/',function(req,res){
     let user = req.body.user;
     let password = req.body.password;
+    let user = new User({
+        user: "vanya",
+        password:"vanya"
+    });
+    user.save(function (err) {});
     User.findOne({ 
             'user': user
         }, function(err, user){
