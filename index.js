@@ -93,8 +93,7 @@ app.post('/api/login/',function(req,res){
     let user = req.body.user;
     let password = req.body.password;
     User.findOne({ 
-            'user': user,
-            'password': password
+            'user': user
         }, function(err, user){
             if (user){
                  res.send({status:'OK',user:user});
