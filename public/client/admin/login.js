@@ -12,7 +12,7 @@ loginForm.addEventListener('click',function(){
   		success: function(data){
     		if (data.status=='OK') {
 			alert('Всё ок!');
-			console.log(data.user.id);
+			console.log(data.user);
 			/*let cookie_date = new Date () + 30;
 			document.cookie = "id="+user.id+";exp="+cookie_date.toGMTString();*/
     		} else {
