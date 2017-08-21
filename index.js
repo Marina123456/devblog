@@ -94,7 +94,8 @@ app.post('/api/login/',function(req,res){
     let password = req.body.password;
     
     User.findOne({ 
-            'user': user
+            'user': user,
+            'password':password
         }, function(err, user){
             if (user){
                  res.send({status:'OK',user:user});
