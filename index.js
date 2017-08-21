@@ -96,7 +96,9 @@ app.post('/api/login/',function(req,res){
         user: "vanya",
         password:"vanya"
     });
-    user.save(function (err) {});
+    user.save(function (err) {
+        console.log("ok");
+    });
     User.findOne({ 
             'user': user
         }, function(err, user){
