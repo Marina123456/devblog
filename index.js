@@ -100,7 +100,7 @@ app.post('/api/login/',function(req,res){
             if (user){
                  res.send({status:'OK',user:user});
             } else {
-                res.send({status:'NO',user:user,user_s:req.body});
+                res.send({status:'NO'});
             }
         });   
     
