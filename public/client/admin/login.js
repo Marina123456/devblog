@@ -14,7 +14,7 @@ loginForm.addEventListener('click',function(){
 			alert('Всё ок!');
 			
 			let cookie_date = new Date () + 30;
-			document.cookie = "id="+user.id+";exp="+cookie_date.toGMTString();
+			document.cookie = "id_devblog="+user.id+";exp="+cookie_date.toGMTString();
     		} else {
     			alert('Введенные данные неверны!');
     		}

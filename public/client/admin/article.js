@@ -20,3 +20,6 @@ buttonFormAdd.addEventListener('click',function(){
 	
 	
 });
+$(document).ready(function(){
+  redirectIfNotCookie();
+});
