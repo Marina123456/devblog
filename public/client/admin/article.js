@@ -3,7 +3,7 @@ buttonFormAdd.addEventListener('click',function(){
 	
 	let article={
 		title: document.querySelector('#add-article #name').value,
-		category: document.querySelector('#add-article #category').value,
+		categories: document.querySelector('#add-article #category').value,
 		image: document.querySelector('#add-article #image').value,
 		content: CKEDITOR.instances['message'].getData()
 	};
