@@ -41,11 +41,8 @@ function init(){
 
 init();
 function deletePosts(id){
-let formData = new FormData();
-formData.append('id', id);
-  return fetch('/api/posts', {
-    method: 'delete',
-    body: formData
+  return fetch('/api/posts/'+id, {
+    method: 'delete'
   })
   .then(response => console.log(response.json()));
 }
