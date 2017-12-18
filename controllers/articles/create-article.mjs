@@ -3,12 +3,12 @@ import {Article} from '../../libs/mongoose';
 
 export async r=>{
 let image = '/blog.png';
-if (r.req.body.image) image = r.req.body.image; 	
+if (r.body.image) image = r.body.image; 	
     let article = new Article({
-        name: r.req.body.title,
-        category: r.req.body.categories,
+        name: r.body.title,
+        category: r.body.categories,
 	image: image,
-        message: r.req.body.content
+        message: r.body.content
     });
     article.save(function (err) {
         if (!err) {
