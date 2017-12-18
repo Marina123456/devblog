@@ -4,7 +4,7 @@ let app = express();
 let server = require('http').createServer(app);
 let port = process.env.PORT || 3000;
 let config = require('./libs/config');
-import usersR from './routes/posts';
+import posts from './routes/posts';
 
 
 app.listen(port, function(){
