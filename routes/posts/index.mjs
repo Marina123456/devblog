@@ -9,14 +9,14 @@ export default class Router {
         const r = x.Router();
         r
           .route('/')
-          .get ( getArticlesController  )
-          .post( createArticleController)
+          .get (getArticlesController)
+          .post(createArticleController)
           
         ;
 
         r
           .route('/:id')
-          .get ( getArticleController  )
+          .get (getArticleController)
           .delete(deleteArticleController)
         ;
         return r;
