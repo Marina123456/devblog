@@ -4,4 +4,5 @@ pageArticles.addEventListener('load', function(){
     let newTd=newTr.createElement('tr');
     newTd.createTextNode('текст, который смог')
     document.querySelector('.table tbody').appendChild(newTr);
+    alert('ok');
 });
