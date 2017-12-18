@@ -71,7 +71,7 @@ app.get('/api/posts/:id', function (req, res) {
     });
     
 });
-app.get('/api/posts/:id', function (req, res) {
+app.get('/api/posts', function (req, res) {
     Article.find({article.message=article.message.replace(new RegExp("\\\n",'g'),"прошел");});
 	
     article.map(function(elem, index) {
