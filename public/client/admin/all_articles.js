@@ -41,10 +41,12 @@ function init(){
 
 init();
 function deletePosts(id){
-  return fetch('/api/posts/'+id, {
+    
+  fetch('/api/posts/'+id, {
     method: 'delete'
   })
   .then(response => console.log(response.json()));
+    alert('статья удалена');
 }
 function redirectToAdd(){
     window.location.pathname='/admin-article';
