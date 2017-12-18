@@ -41,10 +41,11 @@ function init(){
 
 init();
 function deletePosts(id){
-    
+let formData = new FormData();
+formData.append('id', id);
   return fetch('/api/posts', {
     method: 'delete',
-    body: 'body=1'
+    body: formData
   })
   .then(response => console.log(response.json()));
 }
