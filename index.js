@@ -61,29 +61,29 @@ app.get('/article_:id', function (req, res) {
 });
 app.get('/api/posts/:id', function (req, res) {
     Article.findOne({ 'articleId': req.params["id"]}, function(err, article){
+	    
     article.message=article.message.replace(new RegExp("\\\n",'g'),"прошел");
     res.send({
         id:         article.articleId,
         title:      article.name,
         categories: article.category,
-        content:    article.message}
-    );    
+        content:    article.message
+    });    
     });
     
 });
 app.get('/api/posts', function (req, res) {
-    Article.find({article.message=article.message.replace(new RegExp("\\\n",'g'),"прошел");
+    Article.find(function(err, article){
 	
-    article.map(function(elem, index) {
-        let lem_new={
-            id:         elem.articleId,
-            title:      elem.name,
-            categories: elem.category,
-            content:    elem.message
-        };
-	return lem_new; 
-    });
-    res.send(article);
+	article.map(function(elem, index) {	
+        	let lem_new={
+            	id:         elem.articleId,
+            	title:      elem.name,
+            	categories: elem.category,
+            	content:    elem.message.replace(new RegExp("\\\n",'g'),"прошел")
+        	};
+	return lem_new; });
+    	res.send(article);
     });
 });
 
