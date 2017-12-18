@@ -67,8 +67,8 @@ var User = new Schema({
 var Project = mongoose.model('Project', Project);
 module.exports.Project = Project;
 
-var Article = mongoose.model('Article', ArticleSchema);
-export default Article = Article;
+let Article = mongoose.model('Article', ArticleSchema);
+export default Article;
 
 var User = mongoose.model('User', User);
 module.exports.User = User;
