@@ -68,7 +68,7 @@ var Project = mongoose.model('Project', Project);
 module.exports.Project = Project;
 
 var Article = mongoose.model('Article', ArticleSchema);
-module.exports.Article = Article;
+export default Article = Article;
 
 var User = mongoose.model('User', User);
 module.exports.User = User;
