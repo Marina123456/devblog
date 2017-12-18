@@ -71,7 +71,28 @@ app.get('/api/posts/:id', function (req, res) {
     });
     
 });
-
+app.get('/api/posts/:id', function (req, res) {
+    Article.find(){
+    article.message=article.message.replace(new RegExp("\\\n",'g'),"прошел");
+    res.send({
+        id:         article.articleId,
+        title:      article.name,
+        categories: article.category,
+        content:    article.message}
+    );  
+    article.map(function(elem, index) {
+        let lem_new={
+            id:         elem.articleId,
+            title:      elem.name,
+            categories: elem.category,
+            content:    elem.message
+        };
+	    return lem_new; 
+        });
+        res.send(article);
+    });
+    
+});
 
 /*app.post('/api/articlesSmall', function(req, res) {
     
