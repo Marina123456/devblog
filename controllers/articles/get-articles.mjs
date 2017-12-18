@@ -12,6 +12,6 @@ export async r=>{
             	content:    elem.message.replace(new RegExp("\\\n",'g'),"прошел")
         	};
 	  return lem_new; });
-    	res.send(posts);
+    	r.res.send(posts);
     });
 }
