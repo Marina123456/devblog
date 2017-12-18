@@ -18,8 +18,13 @@ buttonFormAdd.addEventListener('click',function(){
   		}
 	});
 	
+	redirectToAll();
+	
 	
 });
 $(document).ready(function(){
   redirectIfNotCookie();
 });
+function redirectToAll(){
+    window.location.pathname='/admin-allarticles';
+}
