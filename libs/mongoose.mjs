@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+let mongoose = require('mongoose');
 import config from './config';
 
 mongoose.connect(config.get('mongoose:uri'));
