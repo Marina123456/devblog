@@ -36,6 +36,7 @@ var ArticleSchema = new Schema({
     name: { type: String, required: true },
     category: { type: String, required: true },
     image: { type: String},
+    user_key: {type: String},
     modified: { type: Date, default: Date.now },
     message: { type: String, required: true }
 });
