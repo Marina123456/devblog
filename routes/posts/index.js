@@ -1,5 +1,6 @@
 'use strict';
 import getUsersController from '../../controllers/article/get-article';
+import getUsersController from '../../controllers/article/get-articles';
 import createUserController from '../../controllers/article/create-article';
 import deleteUserController from '../../controllers/article/delete-article';
 
@@ -8,15 +9,15 @@ export default class Router {
         const r = x.Router();
         r
           .route('/')
-          .get ( getUsersController  )
-          .post( createUserController)
+          .get ( getArticlesController  )
+          .post( createArticleController)
           
         ;
 
         r
           .route('/:id')
-          .get ( getUsersController  )
-          .delete(deleteUserController)
+          .get ( getArticleController  )
+          .delete(deleteArticleController)
         ;
         return r;
   }
