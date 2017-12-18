@@ -1,4 +1,4 @@
-function init(){
+window.onload=function(){
     let newTr=document.createElement('tr');
     let newTd=document.createElement('tr');
     newTr.appendChild(newTd);
@@ -7,5 +7,3 @@ function init(){
     document.querySelector('.table tbody').appendChild(newTr);
     alert('ok');
 }
-
-init();
