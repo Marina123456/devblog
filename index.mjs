@@ -1,9 +1,10 @@
 'use strict';
-let express = require('express');
+import express from 'express';
 let app = express();
-let server = require('http').createServer(app);
+import http from 'http';
+let server = http.createServer(app);
 let port = process.env.PORT || 3000;
-let config = require('./libs/config');
+import config from './libs/config';
 import posts from './routes/posts';
 
 
