@@ -75,7 +75,7 @@ app.get('/api/posts/:id', function (req, res) {
 app.get('/api/posts', function (req, res) {
     Article.find(function(err, article){
 	
-	article.map(function(elem, index) {	
+	let posts=article.map(function(elem, index) {	
         	let lem_new={
             	id:         elem.articleId,
             	title:      elem.name,
@@ -83,7 +83,7 @@ app.get('/api/posts', function (req, res) {
             	content:    elem.message.replace(new RegExp("\\\n",'g'),"прошел")
         	};
 	return lem_new; });
-    	res.send(article);
+    	res.send(posts);
     });
 });
 
