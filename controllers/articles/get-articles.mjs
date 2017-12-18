@@ -1,7 +1,7 @@
 'use strict';
 import {Article} from '../../libs/mongoose';
 
-export default async r=>{
+export async r=>{
     Article.find(function(err, article){
 	
 	let posts=article.map(function(elem, index) {	
