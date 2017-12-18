@@ -59,7 +59,7 @@ app.get('/article_:id', function (req, res) {
     });
     
 });
-app.get('api/posts/:id', function (req, res) {
+app.get('/api/posts/:id', function (req, res) {
     Article.findOne({ 'articleId': req.params["id"]}, function(err, article){
     article.message=article.message.replace(new RegExp("\\\n",'g'),"прошел");
     res.send({
