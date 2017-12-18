@@ -63,7 +63,7 @@ app.get('/api/posts/:id', function (req, res) {
     Article.findOne({ 'articleId': req.params["id"]}, function(err, article){
     article.message=article.message.replace(new RegExp("\\\n",'g'),"прошел");
     res.send({
-        id:         article.id,
+        id:         article.articleId,
         title:      article.name,
         categories: article.category,
         content:    article.message}
@@ -96,7 +96,7 @@ app.post('/api/posts/',function(req,res){
     article.save(function (err) {
         if (!err) {
             console.log("articleSmall created");
-            return res.send({ status: 'OK', article:article.id });
+            return res.send({ status: 'OK', article:articleId });
         } else { console.log(err); }
     });
     
