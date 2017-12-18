@@ -87,7 +87,7 @@ app.get('/api/posts', function (req, res) {
     });
 });
 app.delete('/api/posts/:id', function (req, res) {
-     Article.findByIdAndRemove( {'articleId': req.params["id"]}, (err, article) => {  
+     Article.findOneAndRemove( {'articleId': req.params["id"]}, (err, article) => {  
    	res.send({
         	id:         article.articleId,
         	title:      article.name,
