@@ -28,7 +28,7 @@ function init(){
             
             let newTd5=document.createElement('td');
             newTr.appendChild(newTd5);
-            newTd5.innerHTML = '<button id="delete_id_" class="btn btn-theme02">Удалить статью</button>';
+            newTd5.innerHTML = '<button id="delete_id_" class="btn btn-theme02" onclick="deletePosts('+item.id+')">Удалить статью</button>';
             
             document.querySelector('.table tbody').appendChild(newTr);
     });
@@ -40,3 +40,12 @@ function init(){
 }
 
 init();
+function deletePosts(id){
+    
+  return fetch('/api/posts', {
+    method: 'delete',
+    body: 'body=1'
+  })
+  .then(response => console.log(response.json()));
+}
+
