@@ -16,7 +16,4 @@ if (req.body.image) image = req.body.image;
             return res.send({ status: 'OK', article:article.articleId });
         } else { console.log(err); }
     });
-    
-});
-
 }
