@@ -1,8 +1,8 @@
 'use strict';
-import getUsersController from '../../controllers/article/get-article';
-import getUsersController from '../../controllers/article/get-articles';
-import createUserController from '../../controllers/article/create-article';
-import deleteUserController from '../../controllers/article/delete-article';
+import getArticleController from '../../controllers/article/get-article';
+import getArticlesController from '../../controllers/article/get-articles';
+import createArticleController from '../../controllers/article/create-article';
+import deleteArticleController from '../../controllers/article/delete-article';
 
 export default class Router {
    static rtr(x) {
