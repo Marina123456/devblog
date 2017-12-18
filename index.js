@@ -48,16 +48,14 @@ app.get('/contact', function (req, res) {
 app.get('/admin-article', function (req, res) {
     res.render('add_article');
 });
-
+app.get('/admin-allarticles', function (req, res) {
+    res.render('all_article');
+});
 app.get('/article_:id', function (req, res) {
     Article.findOne({ 'articleId': req.params["id"]}, function(err, article){
         article.message=article.message.replace(new RegExp("\\\n",'g'),"прошел");
-        //article.message.replaceAll('\\p{Cntrl}', '');
-
-        res.render('article',{article:article});
-        //res.send(article.name);
-    });
-    
+        res.render('article',{article:article});        
+    });    
 });
 app.get('/api/posts/:id', function (req, res) {
     Article.findOne({ 'articleId': req.params["id"]}, function(err, article){
