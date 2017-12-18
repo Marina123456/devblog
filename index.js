@@ -105,7 +105,7 @@ app.post('/api/posts/',function(req,res){
     article.save(function (err) {
         if (!err) {
             console.log("articleSmall created");
-            return res.send({ status: 'OK', article:articleId });
+            return res.send({ status: 'OK', article:article.articleId });
         } else { console.log(err); }
     });
     
