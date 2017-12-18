@@ -45,8 +45,9 @@ function deletePosts(id){
   fetch('/api/posts/'+id, {
     method: 'delete'
   })
-  .then(response => console.log(response.json()));
-    alert('статья удалена');
+  .then(response => console.log(response.json()))
+  .then(res=> alert('статья удалена'););
+    
 }
 function redirectToAdd(){
     window.location.pathname='/admin-article';
