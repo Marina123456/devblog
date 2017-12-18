@@ -2,8 +2,8 @@
 import {Article} from '../../libs/mongoose';
 
 export async r=>{
-    Article.findOneAndRemove( {'articleId': req.params["id"]}, (err, article) => {  
-   	res.send({
+    Article.findOneAndRemove( {'articleId': r.req.params["id"]}, (err, article) => {  
+   	r.res.send({
         	id:         article.articleId,
         	title:      article.name,
         	categories: article.category,
