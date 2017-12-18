@@ -1,0 +1,29 @@
+extends layouts/_admin
+
+block content
+      section#main-content
+        section.wrapper
+          br
+          button.btn.btn-theme02#add-btn Добавить статью
+          // BASIC FORM ELELEMNTS
+          .row.mt
+            .col-lg-12
+              .form-panel
+                h4.mb
+                  i.fa.fa-angle-right
+                  | Список статей
+                table.table
+                  thead
+                    tr
+                      th(scope='col') id
+                      th(scope='col') Заголовок
+                      th(scope='col') категория
+                      th(scope='col') содержание
+                  tbody
+                    tr
+                      th(scope='row') 1
+                      td Тест
+                      td Тест
+                      td Тест
+                      td
+                        button.btn.btn-theme02#delete_id_ Удалить статью
