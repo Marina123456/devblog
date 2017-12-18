@@ -1,7 +1,7 @@
 'use strict';
-import getUsersController from '../../controllers/get-posts';
-import createUserController from '../../controllers/create-posts';
-import deleteUserController from '../../controllers/delete-posts';
+import getUsersController from '../../controllers/article/get-article';
+import createUserController from '../../controllers/article/create-article';
+import deleteUserController from '../../controllers/article/delete-article';
 
 export default class Router {
    static rtr(x) {
@@ -15,6 +15,7 @@ export default class Router {
 
         r
           .route('/:id')
+          .get ( getUsersController  )
           .delete(deleteUserController)
         ;
         return r;
