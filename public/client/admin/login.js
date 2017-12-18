@@ -11,10 +11,13 @@ loginForm.addEventListener('click',function(){
 		data: user_data,
   		success: function(data){
     		if (data.status=='OK') {
+			
+			let cookie_date = new Date;
+			cookie_date.setDate(date.getDate() + 1);
+			window.cookie = "id_devblog="+user.id+";expires="+cookie_date.toGMTString();
 			alert('Всё ок!');
 			
-			let cookie_date = new Date () + 30;
-			window.cookie = "id_devblog="+user.id+";exp="+cookie_date.toGMTString();
+			
     		} else {
     			alert('Введенные данные неверны!');
     		}
