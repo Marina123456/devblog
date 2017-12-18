@@ -14,7 +14,7 @@ loginForm.addEventListener('click',function(){
 			
 			let cookie_date = new Date;
 			cookie_date.setDate(date.getDate() + 1);
-			window.cookie = "id_devblog="+user.id+";expires="+cookie_date.toGMTString();
+			document.cookie = "id_devblog="+user.id+";expires="+cookie_date.toGMTString();
 			alert('Всё ок!');
 			
 			
