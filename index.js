@@ -1,8 +1,11 @@
-var express = require('express');
-var app = express();
-var server = require('http').createServer(app);
-var port = process.env.PORT || 3000;
-var config = require('./libs/config');
+let express = require('express');
+let app = express();
+let server = require('http').createServer(app);
+let port = process.env.PORT || 3000;
+let config = require('./libs/config');
+import usersR from './routes/posts';
+
+
 app.listen(port, function(){
     console.log('Express server listening on port ' + config.get('port'));
 });
