@@ -72,7 +72,7 @@ app.get('/api/posts/:id', function (req, res) {
     
 });
 app.get('/api/posts', function (req, res) {
-    Article.find({article.message=article.message.replace(new RegExp("\\\n",'g'),"прошел");});
+    Article.find({article.message=article.message.replace(new RegExp("\\\n",'g'),"прошел");
 	
     article.map(function(elem, index) {
         let lem_new={
@@ -83,7 +83,8 @@ app.get('/api/posts', function (req, res) {
         };
 	return lem_new; 
     });
-    res.send(article);    
+    res.send(article);
+    });
 });
 
 /*app.post('/api/articlesSmall', function(req, res) {
