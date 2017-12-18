@@ -49,7 +49,7 @@ app.get('/admin-article', function (req, res) {
     res.render('add_article');
 });
 app.get('/admin-allarticles', function (req, res) {
-    res.render('all_article');
+    res.render('all_articles');
 });
 app.get('/article_:id', function (req, res) {
     Article.findOne({ 'articleId': req.params["id"]}, function(err, article){
