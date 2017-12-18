@@ -86,21 +86,17 @@ app.get('/api/posts', function (req, res) {
     	res.send(posts);
     });
 });
-
-/*app.post('/api/articlesSmall', function(req, res) {
+app.delete('/api/posts/:id', function (req, res) {
+     Article.findByIdAndRemove( {'articleId': req.params["id"]}, (err, article) => {  
+   	res.send({
+        	id:         article.articleId,
+        	title:      article.name,
+        	categories: article.category,
+        	content:    article.message
+    }); 
     
-    var articleSmall = new ArticleSmallModel({
-        title: req.body.title,
-        description: req.body.description,
-        category: req.body.description
-    });
-    articleSmall.save(function (err) {
-        if (!err) {
-            console.log("articleSmall created");
-            return res.send({ status: 'OK', articleSmall:articleSmall });
-        } else { console.log(err); }
-    });
-});*/
+});
+
 app.post('/api/posts/',function(req,res){
     let article = new Article({
         name: req.body.title,
