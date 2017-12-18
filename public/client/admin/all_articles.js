@@ -26,6 +26,9 @@ function init(){
             let newText4=document.createTextNode(item.content);
             newTd4.appendChild(newText4);
             
+            let newTd5=document.createElement('td');
+            newTr.appendChild(newTd5);
+            newTd5.innerHTML = '<button id="delete_id_" class="btn btn-theme02">Удалить статью</button>';
             
             document.querySelector('.table tbody').appendChild(newTr);
     });
