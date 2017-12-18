@@ -4,3 +4,6 @@ function init() {
     newTd.createTextNode('текст, который смог')
     document.querySelector('.table tbody').appendChild(newLi);
 };
+$( document ).ready(function() {
+  init();
+});
