@@ -1,4 +1,4 @@
-var nconf = require('nconf');
+let nconf = require('nconf');
 
 nconf.argv()
     .env()
