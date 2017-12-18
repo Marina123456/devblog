@@ -1,7 +1,6 @@
-var mongoose    = require('mongoose');
+import mongoose from 'mongoose';
+import config from './config';
 
-
-var config = require('./config');
 mongoose.connect(config.get('mongoose:uri'));
 
 var autoIncrement = require('mongoose-auto-increment');
