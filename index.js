@@ -93,7 +93,8 @@ app.delete('/api/posts/:id', function (req, res) {
         	title:      article.name,
         	categories: article.category,
         	content:    article.message
-    }); 
+    });
+   });
     
 });
 
