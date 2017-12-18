@@ -1,14 +1,12 @@
 {
-  "scripts": {
-    "start": "node --experimental-modules index.mjs",
-    "dev:start": "nodemon --watch"
-  },
+  
   "name": "devblog",
   "version": "1.0.0",
   "description": "",
   "main": "index.mjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node --experimental-modules index.mjs",
+    "dev:start": "nodemon --watch"
   },
   "author": "",
   "license": "ISC",
