@@ -74,6 +74,20 @@ app.get('/article_:id', function (req, res) {
         } else { console.log(err); }
     });
 });*/
+app.post('/api/posts/',function(req,res){
+    let article = new Article({
+        name: req.body.title,
+        category: req.body.categories,
+        message: req.body.content
+    });
+    article.save(function (err) {
+        if (!err) {
+            console.log("articleSmall created");
+            return res.send({ status: 'OK', article:article.id });
+        } else { console.log(err); }
+    });
+    
+});
 app.post('/api/article/',function(req,res){
     let article = new Article({
         name: req.body.name,
