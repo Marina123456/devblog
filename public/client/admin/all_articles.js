@@ -46,11 +46,17 @@ function deletePosts(id){
     method: 'delete'
   })
   .then(response => response.json())
-  .then(res=> { console.log(res);
-               alert('статья удалена');});
+  .then(res=> { 
+      console.log(res);
+      alert('статья удалена');
+      redirectToThis();
+  });
+    
     
 }
 function redirectToAdd(){
     window.location.pathname='/admin-article';
 }
-
+function redirectToThis(){
+    window.location.pathname='/admin-allarticles';
+}
