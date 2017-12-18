@@ -97,9 +97,12 @@ app.delete('/api/posts/:id', function (req, res) {
 });
 
 app.post('/api/posts/',function(req,res){
+let image = '/blog.png';
+if (req.body.image) image = req.body.image; 	
     let article = new Article({
         name: req.body.title,
         category: req.body.categories,
+	image: image,
         message: req.body.content
     });
     article.save(function (err) {
@@ -153,12 +156,4 @@ app.post('/api/project', function(req, res) {
         } else { console.log(err); }
     });
 });
-/*app.delete('/api/articlesSmall', function(req, res) {
-    var articleSmall = new ArticleSmallModel({});
-    articleSmall.remove(function (err) {
-        if (!err) {
-            console.log("articleSmall delete");
-            return res.send({ status: 'OK', articleSmall:articleSmall });
-        } else { console.log(err); }
-    });
-});*/
+
