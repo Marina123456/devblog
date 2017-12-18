@@ -46,4 +46,7 @@ function deletePosts(id){
   })
   .then(response => console.log(response.json()));
 }
+function redirectToAdd(){
+    window.location.pathname='/admin-article';
+}
 
