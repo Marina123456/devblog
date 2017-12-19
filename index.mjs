@@ -20,49 +20,52 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
     extended: true
 }));
 
-app.use(express.static('public'));
-app.set('view engine', 'jade');
+app
+
+
+.set('view engine', 'jade')
 
 
 //CRUD Article
 
 //----//
-app.use('/api/posts', posts.rtr(express));
-app.get('/', function (req, res) {
+.use(express.static('public'))
+.use('/api/posts', posts.rtr(express))
+.get('/', function (req, res) {
     ArticleSmallModel.find(function (err, articlesSmall) {
         res.render('index', {articlesSmall: articlesSmall});
-    });
+    })
 
-});
-app.get('/login', function (req, res) {
+})
+.get('/login', function (req, res) {
     res.render('login');
-});
-app.get('/projects', function (req, res) {
+})
+.get('/projects', function (req, res) {
     Project.find(function (err, project) {
         res.render('projects',{project: project});
     });
-});
-app.get('/links', function (req, res) {
+})
+.get('/links', function (req, res) {
     res.render('links' );
-});
-app.get('/contact', function (req, res) {
+})
+.get('/contact', function (req, res) {
     res.render('contact');
-});
-
-app.get('/admin/article', function (req, res) {
+})
+.use(express.static('../public'))
+.get('/admin/article', function (req, res) {
     res.render('add_article');
-});
-app.get('/admin/allarticles', function (req, res) {
-    app.use(express.static('../../public'));
+})
+.get('/admin/allarticles', function (req, res) {
+    app.use(express.static('../public'));
     res.render('all_articles');
 });
-app.get('/article/:id', function (req, res) {
+.get('/article/:id', function (req, res) {
     Article.findOne({ 'articleId': req.params["id"]}, function(err, article){
         article.message=article.message.replace(new RegExp("\\\n",'g'),"прошел");
         res.render('article',{article:article});        
     });    
 });
-app.post('/api/article/',function(req,res){
+.post('/api/article/',function(req,res){
     let article = new Article({
         name: req.body.name,
         category: req.body.category,
@@ -78,7 +81,7 @@ app.post('/api/article/',function(req,res){
     
 });
 
-app.post('/api/login/',function(req,res){
+.post('/api/login/',function(req,res){
     let user = req.body.user;
     let password = req.body.password;
     
@@ -94,7 +97,7 @@ app.post('/api/login/',function(req,res){
         });   
     
 });
-app.post('/api/project', function(req, res) {
+.post('/api/project', function(req, res) {
     var project = new Project({
         title: req.body.title,
         description: req.body.description
