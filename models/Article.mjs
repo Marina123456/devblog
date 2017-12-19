@@ -1,3 +1,4 @@
+import mongoose from 'mongoose';
 import {Schema, autoIncrement} from './Schema';
 
 let ArticleSchema = new Schema({
