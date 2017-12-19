@@ -23,7 +23,7 @@ function init(){
             
             let newTd4=document.createElement('td');
             newTr.appendChild(newTd4);
-            newTd4.innerHTML(item.content);
+            newTd4.innerHTML=item.content;
             
             let newTd5=document.createElement('td');
             newTr.appendChild(newTd5);
