@@ -15,7 +15,7 @@ app.listen(port, function(){
     console.log('Express server listening on port ' + config.get('port'));
 });
 import bodyParser from 'body-parser';
-app.use( bodyParser.json() );       // to support JSON-encoded bodies
+app.use(bodyParser.json());       // to support JSON-encoded bodies
 app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
     extended: true
 }));
@@ -53,7 +53,8 @@ app.get('/admin/article', function (req, res) {
     res.render('add_article');
 });
 app.get('/admin/allarticles', function (req, res) {
-    res.render('../all_articles');
+    app.use(express.static('../public'));
+    res.render('all_articles');
 });
 app.get('/article/:id', function (req, res) {
     Article.findOne({ 'articleId': req.params["id"]}, function(err, article){
