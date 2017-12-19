@@ -2,13 +2,19 @@
 import express from 'express';
 import http from 'http';
 import config from './db/config';
-import posts from './routes/posts';
-import {Article} from './models/Article';
-import {User} from './models/User';
-import {BooksSmall} from './models/BooksSmall';
-import {Project} from './models/Project';
-import {ArticleSmall} from './models/ArticleSmall';
 import bodyParser from 'body-parser';
+
+//роутеры
+import posts from './routes/posts';
+import projects from './routes/projects';
+import users from './routes/users';
+
+//модели
+import {Article} from './models/Article';
+import {ArticleSmall} from './models/ArticleSmall';
+import {Project} from './models/Project';
+
+
 
 let app = express();
 let server = http.createServer(app);
@@ -26,6 +32,9 @@ app
 
 .use(express.static('public'))
 .use('/api/posts', posts.rtr(express))
+.use('/api/login', users.rtr(express))
+.use('/api/project', projects.rtr(express)) 
+
 .get('/', function (req, res) {
     ArticleSmall.find(function (err, articlesSmall) {
         res.render('index', {articlesSmall: articlesSmall});
@@ -61,32 +70,5 @@ app
         res.render('article',{article:article});        
     });    
 })
-.post('/api/login/',function(req,res){
-    let user = req.body.user;
-    let password = req.body.password;
-    
-    User.findOne({ 
-            'user': user,
-            'password':password
-        }, function(err, user){
-            if (user){
-                 res.send({status:'OK',user:user});
-            } else {
-                res.send({status:'NO'});
-            }
-        });   
-    
-})
-.post('/api/project', function(req, res) {
-    var project = new Project({
-        title: req.body.title,
-        description: req.body.description
-    });
-    project.save(function (err) {
-        if (!err) {
-            console.log("articleSmall created");
-            return res.send({ status: 'OK', project:project });
-        } else { console.log(err); }
-    });
-});
+
 
