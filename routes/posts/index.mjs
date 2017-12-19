@@ -1,6 +1,6 @@
 'use strict';
 //import getArticleController from '../../controllers/articles/get-article';
-import getArticlesController from '../../controllers/articles/get-articles';
+//import getArticlesController from '../../controllers/articles/get-articles';
 import createArticleController from '../../controllers/articles/create-article';
 import deleteArticleController from '../../controllers/articles/delete-article';
 
@@ -9,7 +9,7 @@ export default class Router {
         const r = x.Router();
         r
           .route('/')
-          .get (getArticlesController)
+          //.get (getArticlesController)
           .post(createArticleController)
           
         ;
