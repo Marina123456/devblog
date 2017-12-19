@@ -9,7 +9,7 @@ export default async r=>{
             	id:         elem.articleId,
             	title:      elem.name,
             	categories: elem.category,
-            	content:    elem.message.replace(new RegExp("\\\n",'g'),"прошел")
+            	content:    elem.message.replace(new RegExp("\\\n",'g'),"")
         	};
 	  return lem_new; });
     	r.res.send(posts);

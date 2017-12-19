@@ -7,7 +7,7 @@ if (r.body.image) image = r.body.image;
     let article = new Article({
         name: r.body.title,
         category: r.body.categories,
-	image: image,
+	    image: image,
         message: r.body.content
     });
     article.save(function (err) {

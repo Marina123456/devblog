@@ -49,15 +49,14 @@ app
 .get('/admin/articles/add', function (req, res) {
     res.render('add_article');
 })
-.get('/admin/articles/all', function (req, res) {
-    
+.get('/admin/articles/all', function (req, res) {    
     res.render('all_articles');
 })
 
 .use('/article',express.static('public'))
 .get('/article/:id', function (req, res) {
     Article.findOne({ 'articleId': req.params["id"]}, function(err, article){
-        article.message=article.message.replace(new RegExp("\\\n",'g'),"прошел");
+        article.message=article.message.replace(new RegExp("\\\n",'g'),"");
         res.render('article',{article:article});        
     });    
 })
