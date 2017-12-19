@@ -22,11 +22,11 @@ app.set('view engine', 'jade');
 
 
 //CRUD Article
-let ArticleSmallModel = require('./libs/mongoose').ArticleSmallModel;
-let BooksSmallModel = require('./libs/mongoose').BooksSmallModel;
-let Project = require('./libs/mongoose').Project;
-let Article = require('./libs/mongoose').Article;
-let User = require('./libs/mongoose').User;
+import {ArticleSmallModel} from './libs/mongoose';
+import {BooksSmallModel} from './libs/mongoose';
+import {Project} from './libs/mongoose';
+import {Article} from './libs/mongoose';
+import {User} from './libs/mongoose';
 //----//
 app.use('/api/posts', posts.rtr(express));
 app.get('/', function (req, res) {
