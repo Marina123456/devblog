@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 
 app
 .set('view engine', 'jade')
-.use(express.static(__dirname +'public'))
+.use(express.static(__dirname +'/public'))
 .use('/api/posts', posts.rtr(express))
 .get('/', function (req, res) {
     ArticleSmallModel.find(function (err, articlesSmall) {
