@@ -47,13 +47,13 @@ app.get('/contact', function (req, res) {
     res.render('contact');
 });
 
-app.get('/admin-article', function (req, res) {
+app.get('/admin/article', function (req, res) {
     res.render('add_article');
 });
-app.get('/admin-allarticles', function (req, res) {
+app.get('/admin/allarticles', function (req, res) {
     res.render('all_articles');
 });
-app.get('/article_:id', function (req, res) {
+app.get('/article/:id', function (req, res) {
     Article.findOne({ 'articleId': req.params["id"]}, function(err, article){
         article.message=article.message.replace(new RegExp("\\\n",'g'),"прошел");
         res.render('article',{article:article});        
