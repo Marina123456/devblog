@@ -23,8 +23,7 @@ function init(){
             
             let newTd4=document.createElement('td');
             newTr.appendChild(newTd4);
-            let newText4=document.createTextNode(item.content);
-            newTd4.appendChild(newText4);
+            newTd4.innerHTML(item.content);
             
             let newTd5=document.createElement('td');
             newTr.appendChild(newTd5);
