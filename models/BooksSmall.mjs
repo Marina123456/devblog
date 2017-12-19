@@ -17,8 +17,7 @@ let Schema = mongoose.Schema;
 
 var BooksSmallSchema = new Schema({
     title: { type: String, required: true },
-    url: { type: String, required: true },
-    image:[Image]
+    url: { type: String, required: true }
 });
 
 export let BooksSmall = mongoose.model('BooksSmall', BooksSmallSchema);

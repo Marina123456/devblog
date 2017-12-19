@@ -62,23 +62,7 @@ app
         res.render('article',{article:article});        
     });    
 })
-/*
-.post('/api/article/',function(req,res){
-    let article = new Article({
-        name: req.body.name,
-        category: req.body.category,
-        image: req.body.image,
-        message: req.body.message
-    });
-    article.save(function (err) {
-        if (!err) {
-            console.log("articleSmall created");
-            return res.send({ status: 'OK', article:article });
-        } else { console.log(err); }
-    });
-    
-})
-*/
+
 .post('/api/login/',function(req,res){
     let user = req.body.user;
     let password = req.body.password;
