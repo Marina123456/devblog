@@ -44,12 +44,12 @@ app
 .get('/contact', function (req, res) {
     res.render('contact');
 })
-.use('/admin',express.static('public'))
+.use('/admin/articles/',express.static('public'))
 .get('/admin/article', function (req, res) {
     res.render('add_article');
 })
-.get('/admin/allarticles', function (req, res) {
-    app.use(express.static('../public'));
+.get('/admin/articles/all', function (req, res) {
+    
     res.render('all_articles');
 })
 .get('/article/:id', function (req, res) {
