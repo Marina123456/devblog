@@ -31,17 +31,12 @@ function init(){
             newTd5.innerHTML = '<button id="delete_id_" class="btn btn-theme02" onclick="deletePosts('+item.id+')">Удалить статью</button>';
             
             document.querySelector('.table tbody').appendChild(newTr);
-    });
-        
-    });
-    
-    
-    
+    });       
+});  
 }
 
 init();
-function deletePosts(id){
-    
+function deletePosts(id){    
   fetch('/api/posts/'+id, {
     method: 'delete'
   })
@@ -51,12 +46,10 @@ function deletePosts(id){
       alert('статья удалена');
       redirectToThis();
   });
-    
-    
 }
 function redirectToAdd(){
-    window.location.pathname='/admin-article';
+    window.location.pathname='/admin/articles/add';
 }
 function redirectToThis(){
-    window.location.pathname='/admin-allarticles';
+    window.location.pathname='/admin/articles/all';
 }

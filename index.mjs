@@ -44,14 +44,16 @@ app
 .get('/contact', function (req, res) {
     res.render('contact');
 })
+
 .use('/admin/articles',express.static('public'))
-.get('/admin/article/add', function (req, res) {
+.get('/admin/articles/add', function (req, res) {
     res.render('add_article');
 })
 .get('/admin/articles/all', function (req, res) {
     
     res.render('all_articles');
 })
+
 .use('/article',express.static('public'))
 .get('/article/:id', function (req, res) {
     Article.findOne({ 'articleId': req.params["id"]}, function(err, article){
@@ -59,6 +61,7 @@ app
         res.render('article',{article:article});        
     });    
 })
+/*
 .post('/api/article/',function(req,res){
     let article = new Article({
         name: req.body.name,
@@ -74,6 +77,7 @@ app
     });
     
 })
+*/
 .post('/api/login/',function(req,res){
     let user = req.body.user;
     let password = req.body.password;
