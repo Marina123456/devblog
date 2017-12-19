@@ -7,6 +7,9 @@ let port = process.env.PORT || 3000;
 import config from './db/config';
 import posts from './routes/posts';
 
+import {ArticleSmallModel, BooksSmallModel, Project, User} from './models/mongoose';
+import {Article} from './models/Article';
+
 
 app.listen(port, function(){
     console.log('Express server listening on port ' + config.get('port'));
@@ -22,8 +25,7 @@ app.set('view engine', 'jade');
 
 
 //CRUD Article
-import {ArticleSmallModel, BooksSmallModel, Project, User} from './models/mongoose';
-import {Article} from './models/Article';
+
 //----//
 app.use('/api/posts', posts.rtr(express));
 app.get('/', function (req, res) {
