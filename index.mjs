@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 
 app
 .set('view engine', 'jade')
-.use(express.static(__dirname +'/public'))
+.use(express.static('public'))
 .use('/api/posts', posts.rtr(express))
 .get('/', function (req, res) {
     ArticleSmallModel.find(function (err, articlesSmall) {
@@ -44,7 +44,7 @@ app
 .get('/contact', function (req, res) {
     res.render('contact');
 })
-.use(express.static('../public'))
+.use('/admin',express.static('public'))
 .get('/admin/article', function (req, res) {
     res.render('add_article');
 })
