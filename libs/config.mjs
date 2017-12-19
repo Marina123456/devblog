@@ -4,4 +4,4 @@ nconf.argv()
     .env()
     .file({ file: './config.json' });
 
-export {nconf};
+export default nconf;
