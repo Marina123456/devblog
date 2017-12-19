@@ -1,7 +1,7 @@
 'use strict';
 import {Article} from '../../libs/mongoose';
 
-export async r=>{
+export default async r=>{
 let image = '/blog.png';
 if (r.body.image) image = r.body.image; 	
     let article = new Article({
