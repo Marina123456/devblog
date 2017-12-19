@@ -26,5 +26,5 @@ $(document).ready(function(){
   redirectIfNotCookie();
 });
 function redirectToAll(){
-    window.location.pathname='/admin-allarticles';
+    window.location.pathname='/admin/articles/all';
 }
