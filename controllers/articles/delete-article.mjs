@@ -1,5 +1,5 @@
 'use strict';
-import {Article} from '../../libs/mongoose';
+import {Article} from '../../models/mongoose';
 
 export default async r=>{
     Article.findOneAndRemove( {'articleId': r.params["id"]}, (err, article) => {  

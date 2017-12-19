@@ -1,5 +1,5 @@
 'use strict';
-import {Article} from '../../libs/mongoose';
+import {Article} from '../../models/mongoose';
 
 export default async r=>{
     Article.findOne({ 'articleId': r.params["id"]}, function(err, article){

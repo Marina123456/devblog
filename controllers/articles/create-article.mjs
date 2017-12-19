@@ -1,5 +1,5 @@
 'use strict';
-import {Article} from '../../libs/mongoose';
+import {Article} from '../../models/mongoose';
 
 export default async r=>{
 let image = '/blog.png';
