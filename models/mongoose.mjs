@@ -47,17 +47,8 @@ var BooksSmallSchema = new Schema({
     url: { type: String, required: true },
     image:[Image]
 });
-var UserSchema = new Schema({
-    user: { type: String, required: true },
-    password: { type: String, required: true }
-});
+
 export let Project = mongoose.model('Project', ProjectSchema);
-
-
-
-
-
-export let User = mongoose.model('User', UserSchema);
 
 
 export let ArticleSmallModel = mongoose.model('ArticleSmall', ArticleSmallSchema);
