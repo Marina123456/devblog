@@ -79,4 +79,4 @@ let ArticleBigModel = mongoose.model('ArticleBig', ArticleBigSchema);
 
 
 let BooksSmallModel = mongoose.model('BooksSmall', BooksSmallSchema);
-export default {BooksSmallModel,Project,Article,User,ArticleSmallModel,ArticleBigModel};
+export {BooksSmallModel,Project,Article,User,ArticleSmallModel,ArticleBigModel};
