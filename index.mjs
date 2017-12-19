@@ -21,14 +21,7 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 }));
 
 app
-
-
 .set('view engine', 'jade')
-
-
-//CRUD Article
-
-//----//
 .use(express.static('public'))
 .use('/api/posts', posts.rtr(express))
 .get('/', function (req, res) {
@@ -58,13 +51,13 @@ app
 .get('/admin/allarticles', function (req, res) {
     app.use(express.static('../public'));
     res.render('all_articles');
-});
+})
 .get('/article/:id', function (req, res) {
     Article.findOne({ 'articleId': req.params["id"]}, function(err, article){
         article.message=article.message.replace(new RegExp("\\\n",'g'),"прошел");
         res.render('article',{article:article});        
     });    
-});
+})
 .post('/api/article/',function(req,res){
     let article = new Article({
         name: req.body.name,
@@ -79,8 +72,7 @@ app
         } else { console.log(err); }
     });
     
-});
-
+})
 .post('/api/login/',function(req,res){
     let user = req.body.user;
     let password = req.body.password;
@@ -96,7 +88,7 @@ app
             }
         });   
     
-});
+})
 .post('/api/project', function(req, res) {
     var project = new Project({
         title: req.body.title,
