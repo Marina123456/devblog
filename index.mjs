@@ -9,9 +9,9 @@ import posts from './routes/posts';
 
 import {Article} from './models/Article';
 import {User} from './models/User';
-import {BooksSmallModel} from './models/BooksSmallModel';
+import {BooksSmall} from './models/BooksSmall';
 import {Project} from './models/Project';
-import {ArticleSmallModel} from './models/ArticleSmallModel';
+import {ArticleSmall} from './models/ArticleSmall';
 
 app.listen(port, function(){
     console.log('Express server listening on port ' + config.get('port'));
@@ -27,7 +27,7 @@ app
 .use(express.static('public'))
 .use('/api/posts', posts.rtr(express))
 .get('/', function (req, res) {
-    ArticleSmallModel.find(function (err, articlesSmall) {
+    ArticleSmall.find(function (err, articlesSmall) {
         res.render('index', {articlesSmall: articlesSmall});
     })
 

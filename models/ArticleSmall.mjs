@@ -25,4 +25,4 @@ var ArticleSmallSchema = new Schema({
     category:{ type: String, required: true },
 });
 
-export let ArticleSmallModel = mongoose.model('ArticleSmall', ArticleSmallSchema);
+export let ArticleSmall = mongoose.model('ArticleSmall', ArticleSmallSchema);
