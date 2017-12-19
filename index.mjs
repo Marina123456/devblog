@@ -1,22 +1,24 @@
 'use strict';
 import express from 'express';
-let app = express();
 import http from 'http';
-let server = http.createServer(app);
-let port = process.env.PORT || 3000;
 import config from './db/config';
 import posts from './routes/posts';
-
 import {Article} from './models/Article';
 import {User} from './models/User';
 import {BooksSmall} from './models/BooksSmall';
 import {Project} from './models/Project';
 import {ArticleSmall} from './models/ArticleSmall';
+import bodyParser from 'body-parser';
+
+let app = express();
+let server = http.createServer(app);
+let port = process.env.PORT || 3000;
+
 
 app.listen(port, function(){
     console.log('Express server listening on port ' + config.get('port'));
 });
-import bodyParser from 'body-parser';
+
 app.use(bodyParser.json());       // to support JSON-encoded bodies
 app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
     extended: true
