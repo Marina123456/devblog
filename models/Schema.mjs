@@ -15,5 +15,5 @@ db.once('open', function callback () {
 
 autoIncrement.initialize(db);
 
-export autoIncrement;
+export {autoIncrement};
 export let Schema = mongoose.Schema;
