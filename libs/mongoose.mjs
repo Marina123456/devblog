@@ -20,7 +20,7 @@ var Schema = mongoose.Schema;
 var Image = new Schema({
     url: { type: String, required: true }
 });
-var ArticleSmall = new Schema({
+var ArticleSmallSchema = new Schema({
     title: { type: String, required: true },
     description: { type: String, required: true },
     modified: { type: Date, default: Date.now },
@@ -47,14 +47,14 @@ ArticleSchema.plugin(autoIncrement.plugin, {
     incrementBy: 1
 });
 
-var ArticleBig = new Schema({
+var ArticleBigSchema = new Schema({
     title: { type: String, required: true },
     description: { type: String, required: true },
     modified: { type: Date, default: Date.now },
     category:{ type: String, required: true },
     image:[Image]
 });
-var BooksSmall = new Schema({
+var BooksSmallSchema = new Schema({
     title: { type: String, required: true },
     url: { type: String, required: true },
     image:[Image]
@@ -72,11 +72,11 @@ let Article = mongoose.model('Article', ArticleSchema);
 let User = mongoose.model('User', UserSchema);
 
 
-let ArticleSmallModel = mongoose.model('ArticleSmall', ArticleSmall);
+let ArticleSmallModel = mongoose.model('ArticleSmall', ArticleSmallSchema);
 
 
-let ArticleBigModel = mongoose.model('ArticleBig', ArticleBig);
+let ArticleBigModel = mongoose.model('ArticleBig', ArticleBigSchema);
 
 
-let BooksSmallModel = mongoose.model('BooksSmall', BooksSmall);
+let BooksSmallModel = mongoose.model('BooksSmall', BooksSmallSchema);
 export default {BooksSmallModel,Project,Article,User,ArticleSmallModel,ArticleBigModel};
