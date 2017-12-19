@@ -7,10 +7,11 @@ let port = process.env.PORT || 3000;
 import config from './db/config';
 import posts from './routes/posts';
 
-import {ArticleSmallModel, BooksSmallModel, Project} from './models/mongoose';
 import {Article} from './models/Article';
 import {User} from './models/User';
 import {BooksSmallModel} from './models/BooksSmallModel';
+import {Project} from './models/Project';
+import {ArticleSmallModel} from './models/ArticleSmallModel';
 
 app.listen(port, function(){
     console.log('Express server listening on port ' + config.get('port'));
