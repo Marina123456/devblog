@@ -53,7 +53,7 @@ app.get('/admin/article', function (req, res) {
     res.render('add_article');
 });
 app.get('/admin/allarticles', function (req, res) {
-    app.use(express.static('../public'));
+    app.use(express.static('../../public'));
     res.render('all_articles');
 });
 app.get('/article/:id', function (req, res) {
