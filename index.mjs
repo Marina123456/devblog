@@ -22,11 +22,7 @@ app.set('view engine', 'jade');
 
 
 //CRUD Article
-import {ArticleSmallModel} from './libs/mongoose';
-import {BooksSmallModel} from './libs/mongoose';
-import {Project} from './libs/mongoose';
-import {Article} from './libs/mongoose';
-import {User} from './libs/mongoose';
+import {ArticleSmallModel, BooksSmallModel, Project, Article, User} from './libs/mongoose';
 //----//
 app.use('/api/posts', posts.rtr(express));
 app.get('/', function (req, res) {
