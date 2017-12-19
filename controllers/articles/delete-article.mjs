@@ -1,5 +1,5 @@
 'use strict';
-import {Article} from './models/Article';
+import {Article} from '../../models/Article';
 
 export default async r=>{
     Article.findOneAndRemove( {'articleId': r.params["id"]}, (err, article) => {  
