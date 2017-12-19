@@ -64,19 +64,19 @@ var User = new Schema({
     password: { type: String, required: true }
 });
 var Project = mongoose.model('Project', Project);
-module.exports.Project = Project;
+export {Project};
 
 let Article = mongoose.model('Article', ArticleSchema);
 export {Article};
 
 var User = mongoose.model('User', User);
-module.exports.User = User;
+export {User};
 
 var ArticleSmallModel = mongoose.model('ArticleSmall', ArticleSmall);
-module.exports.ArticleSmallModel = ArticleSmallModel;
+export {ArticleSmallModel};
 
 var ArticleBigModel = mongoose.model('ArticleBig', ArticleBig);
-module.exports.ArticleBigModel = ArticleBigModel;
+export {ArticleBigModel};
 
 var BooksSmallModel = mongoose.model('BooksSmall', BooksSmall);
-module.exports.BooksSmallModel = BooksSmallModel;
+export {BooksSmallModel};
