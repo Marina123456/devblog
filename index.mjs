@@ -4,7 +4,7 @@ let app = express();
 import http from 'http';
 let server = http.createServer(app);
 let port = process.env.PORT || 3000;
-import config from './libs/config';
+import config from './db/config';
 import posts from './routes/posts';
 
 
