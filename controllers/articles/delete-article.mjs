@@ -1,7 +1,7 @@
 'use strict';
 import {Article} from '../../libs/mongoose';
 
-export async r=>{
+export default async r=>{
     Article.findOneAndRemove( {'articleId': r.params["id"]}, (err, article) => {  
    	r.res.send({
         	id:         article.articleId,
