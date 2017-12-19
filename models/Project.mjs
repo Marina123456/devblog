@@ -12,6 +12,8 @@ db.once('open', function callback () {
     console.log("Connected to DB!");
 });
 
+let Schema = mongoose.Schema;
+
 let ProjectSchema = new Schema({
     title: { type: String, required: true },
     description: { type: String, required: true },
