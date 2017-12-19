@@ -3,7 +3,7 @@ import config from './config';
 
 mongoose.connect(config.get('mongoose:uri'));
 
-var autoIncrement = require('mongoose-auto-increment');
+import autoIncrement from 'mongoose-auto-increment';
     
 var db = mongoose.connection;
 autoIncrement.initialize(db);
