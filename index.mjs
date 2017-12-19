@@ -20,17 +20,19 @@ let app = express();
 let server = http.createServer(app);
 let port = process.env.PORT || 3000;
 
-app
-.listen(port, function(){
+app.listen(port, function(){
     console.log('Express server listening on port ' + config.get('port'));
-})
+});
+
+app
 .use(bodyParser.json())      // to support JSON-encoded bodies
 .use(bodyParser.urlencoded({     // to support URL-encoded bodies
     extended: true
 }))
-.set('view engine', 'jade')
 
+.set('view engine', 'jade')
 .use(express.static('public'))
+
 .use('/api/posts', posts.rtr(express))
 .use('/api/login', users.rtr(express))
 .use('/api/project', projects.rtr(express)) 
@@ -69,6 +71,6 @@ app
         article.message=article.message.replace(new RegExp("\\\n",'g'),"");
         res.render('article',{article:article});        
     });    
-})
+});
 
 
