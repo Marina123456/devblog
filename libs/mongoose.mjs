@@ -26,7 +26,7 @@ var ArticleSmall = new Schema({
     modified: { type: Date, default: Date.now },
     category:{ type: String, required: true },
 });
-var Project = new Schema({
+var ProjectSchema = new Schema({
     title: { type: String, required: true },
     description: { type: String, required: true },
     modified: { type: Date, default: Date.now }
@@ -63,7 +63,7 @@ var User = new Schema({
     user: { type: String, required: true },
     password: { type: String, required: true }
 });
-let Project = mongoose.model('Project', Project);
+let Project = mongoose.model('Project', ProjectSchema);
 
 
 let Article = mongoose.model('Article', ArticleSchema);
