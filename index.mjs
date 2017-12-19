@@ -14,25 +14,22 @@ let app = express();
 let server = http.createServer(app);
 let port = process.env.PORT || 3000;
 
-
-app.listen(port, function(){
-    console.log('Express server listening on port ' + config.get('port'));
-});
-
-app.use(bodyParser.json());       // to support JSON-encoded bodies
-app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
-    extended: true
-}));
-
 app
+.listen(port, function(){
+    console.log('Express server listening on port ' + config.get('port'));
+})
+.use(bodyParser.json())      // to support JSON-encoded bodies
+.use(bodyParser.urlencoded({     // to support URL-encoded bodies
+    extended: true
+}))
 .set('view engine', 'jade')
+
 .use(express.static('public'))
 .use('/api/posts', posts.rtr(express))
 .get('/', function (req, res) {
     ArticleSmall.find(function (err, articlesSmall) {
         res.render('index', {articlesSmall: articlesSmall});
     })
-
 })
 .get('/login', function (req, res) {
     res.render('login');
@@ -64,7 +61,6 @@ app
         res.render('article',{article:article});        
     });    
 })
-
 .post('/api/login/',function(req,res){
     let user = req.body.user;
     let password = req.body.password;
