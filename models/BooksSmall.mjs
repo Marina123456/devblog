@@ -21,4 +21,4 @@ var BooksSmallSchema = new Schema({
     image:[Image]
 });
 
-export let BooksSmallModel = mongoose.model('BooksSmall', BooksSmallSchema);
+export let BooksSmall = mongoose.model('BooksSmall', BooksSmallSchema);
