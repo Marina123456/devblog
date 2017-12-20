@@ -2,12 +2,12 @@ import mongoose from 'mongoose';
 import {Schema, autoIncrement} from './Schema';
 
 let ArticleSchema = new Schema({
-    name: { type: String, required: true },
+    name:     { type: String, required: true },
     category: { type: String, required: true },
-    image: { type: String},
+    image:    { type: String},
     user_key: {type: String},
     modified: { type: Date, default: Date.now },
-    message: { type: String, required: true }
+    message:  { type: String, required: true }
 });
 
 ArticleSchema.plugin(autoIncrement.plugin, 'Article');
