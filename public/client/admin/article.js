@@ -23,7 +23,8 @@ buttonFormAdd.addEventListener('click',function(){
 	
 });
 $(document).ready(function(){
-  redirectIfNotCookie();
+	
+  //redirectIfNotCookie();
 });
 function redirectToAll(){
     window.location.pathname='/admin/articles/all';
