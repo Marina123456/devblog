@@ -1,7 +1,7 @@
 'use strict';
 import createProjectController from '../../controllers/projects/create-project';
 import getProjectsController from '../../controllers/projects/get-projects';
-import createProjectController from '../../controllers/projects/create-project';
+import getProjectsController from '../../controllers/projects/create-project';
 import deleteProjectController from '../../controllers/projects/delete-project';
 
 export default class Router {
